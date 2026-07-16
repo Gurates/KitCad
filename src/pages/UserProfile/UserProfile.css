@@ -1,0 +1,94 @@
+.user-profile {
+  padding: var(--spacing-8) var(--spacing-4);
+  max-width: 1000px;
+}
+
+.user-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: var(--spacing-6);
+  margin-bottom: var(--spacing-8);
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-6);
+}
+
+.user-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid var(--color-background);
+  box-shadow: var(--shadow-sm);
+}
+
+.username {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text-main);
+  margin-bottom: var(--spacing-1);
+}
+
+.user-role {
+  color: var(--color-text-muted);
+}
+
+.user-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+}
+
+.user-tabs {
+  display: flex;
+  gap: var(--spacing-2);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 1px;
+}
+
+.user-tab {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  padding: var(--spacing-3) var(--spacing-6);
+  color: var(--color-text-muted);
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+}
+
+.user-tab:hover {
+  color: var(--color-text-main);
+  background-color: var(--color-primary-light);
+}
+
+.user-tab.active {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+}
+
+.tab-content {
+  padding-top: var(--spacing-4);
+}
+
+@media (max-width: 600px) {
+  .user-header {
+    flex-direction: column;
+    gap: var(--spacing-6);
+    align-items: stretch;
+  }
+  .settings-btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .user-tabs {
+    overflow-x: auto;
+    padding-bottom: 0;
+  }
+  .user-tab {
+    white-space: nowrap;
+  }
+}

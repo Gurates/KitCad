@@ -1,0 +1,124 @@
+.explore {
+  padding: var(--spacing-8) var(--spacing-4);
+}
+
+.explore-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+  margin-bottom: var(--spacing-8);
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--color-text-main);
+}
+
+.explore-controls {
+  display: flex;
+  gap: var(--spacing-4);
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.explore-controls .search-bar {
+  flex: 1;
+  min-width: 250px;
+}
+
+.sort-select {
+  padding: var(--spacing-2) var(--spacing-4);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background-color: var(--color-card);
+  font-family: inherit;
+  color: var(--color-text-main);
+  outline: none;
+  cursor: pointer;
+}
+
+.explore-layout {
+  display: flex;
+  gap: var(--spacing-8);
+  align-items: flex-start;
+}
+
+.explore-sidebar {
+  width: 250px;
+  flex-shrink: 0;
+  position: sticky;
+  top: calc(4rem + var(--spacing-8));
+}
+
+.sidebar-section {
+  background-color: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-4);
+}
+
+.sidebar-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-4);
+  color: var(--color-text-main);
+}
+
+.category-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.category-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-2);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+  transition: all 0.2s;
+}
+
+.category-item:hover, .category-item.active {
+  background-color: rgba(37, 99, 235, 0.1);
+  color: var(--color-primary);
+}
+
+.category-item.active {
+  font-weight: 600;
+}
+
+.category-item .count {
+  font-size: 0.75rem;
+  background-color: var(--color-background);
+  padding: 0.125rem 0.375rem;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--color-border);
+}
+
+.explore-content {
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .explore-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .explore-layout {
+    flex-direction: column;
+  }
+  .explore-sidebar {
+    width: 100%;
+    position: static;
+  }
+}
