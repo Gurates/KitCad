@@ -178,6 +178,49 @@
 
 @media (max-width: 768px) {
   .hero-title {
-    font-size: 3rem;
+    font-size: 2.75rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    padding: var(--spacing-10) var(--spacing-4) var(--spacing-8);
+  }
+  
+  .hero-title {
+    font-size: 2.25rem;
+    letter-spacing: -0.03em;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: var(--spacing-6);
+  }
+  
+  .hero-search {
+    flex-direction: column;
+    gap: var(--spacing-2);
+  }
+  
+  .hero-search-input {
+    padding: 0.875rem 1rem 0.875rem 2.75rem;
+    font-size: 1rem;
+  }
+  
+  .hero-search-icon {
+    left: 0.875rem;
+  }
+  
+  .hero-search-btn {
+    position: static;
+    width: 100%;
+    padding: 0.875rem;
+    border-radius: var(--radius-pill);
+    justify-content: center;
+  }
+
+  .hero-quick-links {
+    font-size: 0.75rem;
+    gap: var(--spacing-2);
   }
 }
