@@ -22,12 +22,14 @@ const Home = () => {
           <p className="hero-subtitle">Discover, share, and download thousands of CAD models built by and for FIRST Robotics Competition teams.</p>
           
           <form className="hero-search" onSubmit={handleSearch}>
-            <Search className="hero-search-icon" size={24} />
-            <input 
-              type="text" 
-              placeholder="" 
-              className="hero-search-input"
-            />
+            <div className="hero-search-input-wrapper">
+              <Search className="hero-search-icon" size={24} />
+              <input 
+                type="text" 
+                placeholder="" 
+                className="hero-search-input"
+              />
+            </div>
             <button type="submit" className="btn btn-primary hero-search-btn">Search</button>
           </form>
           

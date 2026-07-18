@@ -36,6 +36,11 @@
   margin-bottom: var(--spacing-4);
 }
 
+.hero-search-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
 .hero-search-icon {
   position: absolute;
   left: 1rem;
