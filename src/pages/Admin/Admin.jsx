@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { UploadCloud, CheckCircle, FileUp, Lock, RefreshCw } from 'lucide-react';
 import { storageService } from '../../services/storageService';
-import { mockModels, mockCategories } from '../../data/mockData';
+import { mockModels, allCategoryNames, categoryTree } from '../../data/mockData';
 import { downloadService } from '../../services/DownloadService';
 import './Admin.css';
 
@@ -190,34 +190,41 @@ const Admin = () => {
                 <div className="form-group">
                   <label>Categories (Select multiple)</label>
                   <div style={{
-                    maxHeight: '150px',
+                    maxHeight: '200px',
                     overflowY: 'auto',
                     border: '1px solid var(--color-border)',
                     borderRadius: 'var(--radius-md)',
                     padding: '0.5rem',
                     backgroundColor: 'var(--color-background-alt)'
                   }}>
-                    {mockCategories.map(cat => (
-                      <div key={cat.id} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem' }}>
-                        <input
-                          type="checkbox"
-                          id={`cat-${cat.id}`}
-                          checked={categories.includes(cat.name)}
-                          onChange={() => {
-                            setCategories(prev => 
-                              prev.includes(cat.name) 
-                                ? prev.filter(c => c !== cat.name)
-                                : [...prev, cat.name]
-                            );
-                          }}
-                          disabled={isUploading}
-                          style={{ cursor: 'pointer' }}
-                        />
-                        <label htmlFor={`cat-${cat.id}`} style={{ cursor: 'pointer', margin: 0, fontSize: '0.9rem' }}>
-                          {cat.name}
-                        </label>
-                      </div>
-                    ))}
+                    {(() => {
+                      const renderTree = (nodes, depth = 0) => {
+                        return nodes.map((node, idx) => (
+                          <React.Fragment key={`${node.name}-${idx}`}>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.4rem', paddingLeft: `${depth * 16}px` }}>
+                              <input
+                                type="checkbox"
+                                checked={categories.includes(node.name)}
+                                onChange={() => {
+                                  setCategories(prev =>
+                                    prev.includes(node.name)
+                                      ? prev.filter(c => c !== node.name)
+                                      : [...prev, node.name]
+                                  );
+                                }}
+                                disabled={isUploading}
+                                style={{ cursor: 'pointer' }}
+                              />
+                              <span style={{ cursor: 'pointer', margin: 0, fontSize: '0.85rem' }}>
+                                {node.name}
+                              </span>
+                            </div>
+                            {node.children && renderTree(node.children, depth + 1)}
+                          </React.Fragment>
+                        ));
+                      };
+                      return renderTree(categoryTree);
+                    })()}
                   </div>
                 </div>
               </div>

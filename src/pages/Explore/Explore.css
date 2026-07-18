@@ -45,7 +45,7 @@
 }
 
 .explore-sidebar {
-  width: 250px;
+  width: 280px;
   flex-shrink: 0;
   position: sticky;
   top: calc(4rem + var(--spacing-8));
@@ -58,47 +58,144 @@
   padding: var(--spacing-4);
 }
 
-.sidebar-title {
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: var(--spacing-4);
-  color: var(--color-text-main);
-}
-
-.category-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-2);
-}
-
-.category-item {
+.sidebar-title-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--spacing-2);
-  border-radius: var(--radius-md);
+  margin-bottom: var(--spacing-4);
+}
+
+.sidebar-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text-main);
+  margin: 0;
+}
+
+.clear-filters-btn {
+  background: none;
+  border: none;
+  color: var(--color-primary);
+  font-size: 0.75rem;
+  font-weight: 600;
   cursor: pointer;
-  color: var(--color-text-muted);
-  font-size: 0.875rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-md);
   transition: all 0.2s;
 }
 
-.category-item:hover, .category-item.active {
+.clear-filters-btn:hover {
   background-color: rgba(37, 99, 235, 0.1);
-  color: var(--color-primary);
 }
 
-.category-item.active {
+/* ---- Category Tree ---- */
+.category-tree {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.category-tree .tree-children {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tree-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 8px;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  color: var(--color-text-muted);
+  font-size: 0.84rem;
+  transition: all 0.15s ease;
+  gap: 4px;
+}
+
+.tree-item:hover {
+  background-color: rgba(37, 99, 235, 0.06);
+  color: var(--color-text-main);
+}
+
+.tree-item.active {
+  background-color: rgba(37, 99, 235, 0.1);
+  color: var(--color-primary);
   font-weight: 600;
 }
 
-.category-item .count {
-  font-size: 0.75rem;
+.tree-item-left {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+  min-width: 0;
+}
+
+.tree-item-left input[type="checkbox"] {
+  width: 14px;
+  height: 14px;
+  accent-color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.tree-folder-icon {
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+  opacity: 0.6;
+}
+
+.tree-item.active .tree-folder-icon {
+  color: var(--color-primary);
+  opacity: 1;
+}
+
+.tree-item-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tree-item-right {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.tree-item .count {
+  font-size: 0.7rem;
   background-color: var(--color-background);
-  padding: 0.125rem 0.375rem;
+  padding: 0.1rem 0.35rem;
   border-radius: var(--radius-xl);
   border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  font-weight: 600;
+}
+
+.tree-item.active .count {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+  background-color: rgba(37, 99, 235, 0.08);
+}
+
+.tree-expand-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 2px;
+  border-radius: var(--radius-sm);
+  color: var(--color-text-muted);
+  transition: all 0.15s ease;
+}
+
+.tree-expand-btn:hover {
+  background-color: rgba(37, 99, 235, 0.1);
+  color: var(--color-primary);
 }
 
 .explore-content {

@@ -1,26 +1,107 @@
 import React, { useState } from 'react';
-import { Search, Filter } from 'lucide-react';
+import { Search, Filter, ChevronRight, ChevronDown, FolderOpen, Folder } from 'lucide-react';
 import ModelCard from '../../components/model/ModelCard';
-import { mockModels, mockCategories } from '../../data/mockData';
+import { mockModels, categoryTree } from '../../data/mockData';
 import './Explore.css';
+
+// Helper: collect all descendant names from a node
+const collectNames = (node) => {
+  let names = [node.name];
+  if (node.children) {
+    node.children.forEach(child => {
+      names = names.concat(collectNames(child));
+    });
+  }
+  return names;
+};
+
+// Recursive tree node component
+const CategoryTreeNode = ({ node, depth, selectedCategories, toggleCategory, expandedNodes, toggleExpand }) => {
+  const hasChildren = node.children && node.children.length > 0;
+  const isExpanded = expandedNodes.includes(node.name);
+  const isSelected = selectedCategories.includes(node.name);
+
+  // Count models that have this category
+  const count = mockModels.filter(m => {
+    const cats = m.categories || (m.category ? [m.category] : []);
+    return cats.includes(node.name);
+  }).length;
+
+  return (
+    <>
+      <li
+        className={`tree-item ${isSelected ? 'active' : ''}`}
+        style={{ paddingLeft: `${depth * 16 + 8}px` }}
+      >
+        <div className="tree-item-left" onClick={() => toggleCategory(node.name)}>
+          <input
+            type="checkbox"
+            checked={isSelected}
+            readOnly
+            style={{ cursor: 'pointer', flexShrink: 0 }}
+          />
+          {hasChildren ? (
+            <FolderOpen size={14} className="tree-folder-icon" />
+          ) : (
+            <Folder size={14} className="tree-folder-icon" />
+          )}
+          <span className="tree-item-name">{node.name}</span>
+        </div>
+        <div className="tree-item-right">
+          {count > 0 && <span className="count">{count}</span>}
+          {hasChildren && (
+            <button
+              className="tree-expand-btn"
+              onClick={(e) => { e.stopPropagation(); toggleExpand(node.name); }}
+            >
+              {isExpanded ? <ChevronDown size={14} /> : <ChevronRight size={14} />}
+            </button>
+          )}
+        </div>
+      </li>
+      {hasChildren && isExpanded && (
+        <ul className="tree-children">
+          {node.children.map((child, idx) => (
+            <CategoryTreeNode
+              key={`${child.name}-${idx}`}
+              node={child}
+              depth={depth + 1}
+              selectedCategories={selectedCategories}
+              toggleCategory={toggleCategory}
+              expandedNodes={expandedNodes}
+              toggleExpand={toggleExpand}
+            />
+          ))}
+        </ul>
+      )}
+    </>
+  );
+};
 
 const Explore = () => {
   const [selectedCategories, setSelectedCategories] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
+  const [expandedNodes, setExpandedNodes] = useState([]);
 
   const toggleCategory = (catName) => {
-    if (catName === 'All Categories') {
-      setSelectedCategories([]);
-      return;
-    }
-    setSelectedCategories(prev => 
-      prev.includes(catName) 
+    setSelectedCategories(prev =>
+      prev.includes(catName)
         ? prev.filter(c => c !== catName)
         : [...prev, catName]
     );
   };
 
-  // Filter models based on search term and categories
+  const clearAll = () => setSelectedCategories([]);
+
+  const toggleExpand = (name) => {
+    setExpandedNodes(prev =>
+      prev.includes(name)
+        ? prev.filter(n => n !== name)
+        : [...prev, name]
+    );
+  };
+
+  // Filter models
   const filteredModels = mockModels.filter(model => {
     // 1. Filter by categories
     if (selectedCategories.length > 0) {
@@ -28,8 +109,8 @@ const Explore = () => {
       const hasMatch = selectedCategories.some(cat => modelCats.includes(cat));
       if (!hasMatch) return false;
     }
-    
-    // 3. Filter by search term
+
+    // 2. Filter by search term
     if (searchTerm) {
       const term = searchTerm.toLowerCase();
       const matchesName = model.name.toLowerCase().includes(term);
@@ -37,16 +118,14 @@ const Explore = () => {
       const matchesCategory = modelCats.some(cat => cat.toLowerCase().includes(term));
       const modelTags = model.features || [];
       const matchesFeature = modelTags.some(tag => tag.toLowerCase().includes(term));
-      
+
       if (!matchesName && !matchesCategory && !matchesFeature) {
         return false;
       }
     }
-    
+
     return true;
   });
-
-  const displayModels = filteredModels;
 
   return (
     <div className="explore container">
@@ -55,16 +134,13 @@ const Explore = () => {
         <div className="explore-controls">
           <div className="search-bar">
             <Search className="search-icon" size={18} />
-            <input 
-              type="text" 
-              placeholder="" 
+            <input
+              type="text"
+              placeholder=""
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
           </div>
-          <button className="btn btn-outline filter-btn">
-            <Filter size={18} /> Filters
-          </button>
           <select className="sort-select">
             <option>Most Popular</option>
             <option>Recently Added</option>
@@ -76,44 +152,39 @@ const Explore = () => {
       <div className="explore-layout">
         <aside className="explore-sidebar">
           <div className="sidebar-section">
-            <h3 className="sidebar-title">Categories</h3>
-            <ul className="category-list">
-              <li 
-                className={`category-item ${selectedCategories.length === 0 ? 'active' : ''}`}
-                onClick={() => toggleCategory('All Categories')}
-              >
-                <span>All Categories</span>
-              </li>
-              {mockCategories.map(cat => (
-                <li 
-                  key={cat.id} 
-                  className={`category-item ${selectedCategories.includes(cat.name) ? 'active' : ''}`}
-                  onClick={() => toggleCategory(cat.name)}
-                >
-                  <div style={{display: 'flex', alignItems: 'center', gap: '8px'}}>
-                    <input 
-                      type="checkbox" 
-                      checked={selectedCategories.includes(cat.name)} 
-                      readOnly 
-                      style={{cursor: 'pointer'}} 
-                    />
-                    <span>{cat.name}</span>
-                  </div>
-                  <span className="count">{cat.count}</span>
-                </li>
+            <div className="sidebar-title-row">
+              <h3 className="sidebar-title">Categories</h3>
+              {selectedCategories.length > 0 && (
+                <button className="clear-filters-btn" onClick={clearAll}>
+                  Clear ({selectedCategories.length})
+                </button>
+              )}
+            </div>
+            <ul className="category-tree">
+              {categoryTree.map((node, idx) => (
+                <CategoryTreeNode
+                  key={`${node.name}-${idx}`}
+                  node={node}
+                  depth={0}
+                  selectedCategories={selectedCategories}
+                  toggleCategory={toggleCategory}
+                  expandedNodes={expandedNodes}
+                  toggleExpand={toggleExpand}
+                />
               ))}
             </ul>
-          </div>        </aside>
+          </div>
+        </aside>
 
         <main className="explore-content">
           <div className="models-grid">
-            {displayModels.length > 0 ? (
-              displayModels.map(model => (
+            {filteredModels.length > 0 ? (
+              filteredModels.map(model => (
                 <ModelCard key={model.id} model={model} />
               ))
             ) : (
               <div style={{ padding: '2rem', textAlign: 'center', color: 'var(--color-text-muted)' }}>
-                No models found in this category.
+                No models found matching your filters.
               </div>
             )}
           </div>

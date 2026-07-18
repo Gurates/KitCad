@@ -26,32 +26,94 @@ export const mockModels = [
     glbUrl: '/models/m1784223077283_web.glb'
   },];
 
-export const mockCategories = [
-  { id: 'c1', name: 'MEKANİK' },
-  { id: 'c2', name: 'HAZIR MEKANİZMALAR' },
-  { id: 'c3', name: 'ELEKTRONİK' },
-  { id: 'c4', name: 'Güç Sistemleri' },
-  { id: 'c5', name: 'Motor Controller' },
-  { id: 'c6', name: 'Motorlar' },
-  { id: 'c7', name: 'Sensörler' },
-  { id: 'c8', name: 'Limelight Series' },
-  { id: 'c9', name: 'Insert' },
-  { id: 'c10', name: 'Nuts' },
-  { id: 'c11', name: 'Adapters' },
-  { id: 'c12', name: 'Collar clamp' },
-  { id: 'c13', name: 'GEARBOXES' },
-  { id: 'c14', name: 'Kasnaklar' },
-  { id: 'c15', name: 'Bumper Brackets' },
-  { id: 'c16', name: 'Swerve Modules' },
-  { id: 'c17', name: 'MK4 Family' },
-  { id: 'c18', name: 'MK5 Family' },
-  { id: 'c19', name: 'Şase' },
-].map(cat => ({
-  ...cat,
-  count: mockModels.filter(m => {
-    const cats = m.categories || (m.category ? [m.category] : []);
-    return cats.includes(cat.name);
-  }).length
+// Helper: count models in a category (including subcategories)
+const countModels = (catName) => mockModels.filter(m => {
+  const cats = m.categories || (m.category ? [m.category] : []);
+  return cats.includes(catName);
+}).length;
+
+// Helper: recursively count models including children
+const countWithChildren = (node) => {
+  let total = countModels(node.name);
+  if (node.children) {
+    node.children.forEach(child => { total += countWithChildren(child); });
+  }
+  return total;
+};
+
+// Hierarchical category tree
+export const categoryTree = [
+  {
+    name: 'MEKANİK',
+    children: [
+      {
+        name: 'Bağlantı Elemanları',
+        children: [
+          { name: 'Insert' },
+          { name: 'Nuts' },
+        ]
+      },
+      {
+        name: 'Güç Aktarma',
+        children: [
+          { name: 'Adapters' },
+          { name: 'Collar Clamp' },
+          { name: 'GEARBOXES' },
+          { name: 'Kasnaklar' },
+        ]
+      },
+      { name: 'Pnömatik' },
+      { name: 'Rulmanlar' },
+      {
+        name: 'ŞASE',
+        children: [
+          { name: 'Bumper Brackets' },
+          {
+            name: 'Swerve Modules',
+            children: [
+              { name: 'MK4 Family' },
+              { name: 'MK5 Family' },
+            ]
+          },
+        ]
+      },
+      { name: 'Wheels' },
+    ]
+  },
+  { name: 'HAZIR MEKANİZMALAR' },
+  {
+    name: 'ELEKTRONİK',
+    children: [
+      {
+        name: 'Güç Sistemleri',
+        children: [
+          { name: 'Limelight Series' },
+        ]
+      },
+      { name: 'Motor Controller' },
+      { name: 'Motorlar' },
+      { name: 'Sensörler' },
+    ]
+  },
+];
+
+// Flatten tree to get all category names (for Admin panel checkboxes)
+const flattenTree = (nodes) => {
+  let result = [];
+  nodes.forEach(node => {
+    result.push(node.name);
+    if (node.children) result = result.concat(flattenTree(node.children));
+  });
+  return result;
+};
+
+export const allCategoryNames = flattenTree(categoryTree);
+
+// Legacy flat list (kept for backward compat)
+export const mockCategories = allCategoryNames.map((name, idx) => ({
+  id: `c${idx + 1}`,
+  name,
+  count: countModels(name)
 }));
 
 export const mockTeam = {
