@@ -14,7 +14,7 @@ export const storageService = {
   /**
    * Upload both files to the local Vite Dev Server API
    */
-  async localUpload(modelName, teamNumber, category, features, thumbFile, stepFile, glbFile, onProgress) {
+  async localUpload(modelName, teamNumber, categories, features, thumbFile, stepFile, glbFile, onProgress) {
     if (onProgress) onProgress(20);
     
     // Convert files to base64
@@ -49,7 +49,7 @@ export const storageService = {
     const payload = {
       name: modelName,
       teamNumber,
-      category,
+      categories,
       features,
       thumbFile: thumbFileData,
       stepFile: stepFileData,

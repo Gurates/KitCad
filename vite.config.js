@@ -79,7 +79,7 @@ function localUploaderPlugin() {
     downloads: 0,
     uploadDate: '${new Date().toISOString().split('T')[0]}',
     thumbnail: '${thumbnailUrl}',
-    category: '${data.category}',
+    categories: ${JSON.stringify(data.categories || [])},
     features: ${JSON.stringify(data.features || [])},
     rawUrl: '${rawUrl}',
     glbUrl: '${glbUrl}'

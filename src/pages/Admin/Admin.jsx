@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { UploadCloud, CheckCircle, FileUp, Lock, RefreshCw } from 'lucide-react';
 import { storageService } from '../../services/storageService';
-import { mockModels } from '../../data/mockData';
+import { mockModels, mockCategories } from '../../data/mockData';
 import { downloadService } from '../../services/DownloadService';
 import './Admin.css';
 
@@ -13,7 +13,7 @@ const Admin = () => {
   // Form State
   const [modelName, setModelName] = useState('');
   const [teamNumber, setTeamNumber] = useState('');
-  const [category, setCategory] = useState('MEKANİK');
+  const [categories, setCategories] = useState([]);
   const [features, setFeatures] = useState('');
   const [selectedThumbFile, setSelectedThumbFile] = useState(null);
   const [selectedStepFile, setSelectedStepFile] = useState(null);
@@ -86,7 +86,7 @@ const Admin = () => {
       await storageService.localUpload(
         modelName, 
         teamNumber, 
-        category,
+        categories,
         featuresArray,
         selectedThumbFile,
         selectedStepFile, 
@@ -106,7 +106,7 @@ const Admin = () => {
   const resetForm = () => {
     setModelName('');
     setTeamNumber('');
-    setCategory('MEKANİK');
+    setCategories([]);
     setFeatures('');
     setSelectedStepFile(null);
     setSelectedGlbFile(null);
@@ -188,17 +188,37 @@ const Admin = () => {
                   />
                 </div>
                 <div className="form-group">
-                  <label>Category</label>
-                  <select 
-                    value={category} 
-                    onChange={(e) => setCategory(e.target.value)}
-                    disabled={isUploading}
-                    style={{ width: '100%', padding: '0.75rem', borderRadius: 'var(--radius-md)', border: '1px solid var(--color-border)', backgroundColor: 'var(--color-background-alt)', color: 'var(--color-text-main)' }}
-                  >
-                    <option value="MEKANİK">MEKANİK</option>
-                    <option value="HAZIR MEKANİZMALAR">HAZIR MEKANİZMALAR</option>
-                    <option value="ELEKTRONİK">ELEKTRONİK</option>
-                  </select>
+                  <label>Categories (Select multiple)</label>
+                  <div style={{
+                    maxHeight: '150px',
+                    overflowY: 'auto',
+                    border: '1px solid var(--color-border)',
+                    borderRadius: 'var(--radius-md)',
+                    padding: '0.5rem',
+                    backgroundColor: 'var(--color-background-alt)'
+                  }}>
+                    {mockCategories.map(cat => (
+                      <div key={cat.id} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem' }}>
+                        <input
+                          type="checkbox"
+                          id={`cat-${cat.id}`}
+                          checked={categories.includes(cat.name)}
+                          onChange={() => {
+                            setCategories(prev => 
+                              prev.includes(cat.name) 
+                                ? prev.filter(c => c !== cat.name)
+                                : [...prev, cat.name]
+                            );
+                          }}
+                          disabled={isUploading}
+                          style={{ cursor: 'pointer' }}
+                        />
+                        <label htmlFor={`cat-${cat.id}`} style={{ cursor: 'pointer', margin: 0, fontSize: '0.9rem' }}>
+                          {cat.name}
+                        </label>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
 

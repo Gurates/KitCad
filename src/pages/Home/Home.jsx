@@ -32,14 +32,6 @@ const Home = () => {
             </div>
             <button type="submit" className="btn btn-primary hero-search-btn">Search</button>
           </form>
-          
-          <div className="hero-quick-links">
-            <span>Popular:</span>
-            <Link to="/explore">Swerve</Link>
-            <Link to="/explore">Intakes</Link>
-            <Link to="/explore">Climbers</Link>
-            <Link to="/explore">Team 254</Link>
-          </div>
         </div>
       </section>
 
