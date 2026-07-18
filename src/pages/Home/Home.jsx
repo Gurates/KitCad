@@ -25,7 +25,7 @@ const Home = () => {
             <Search className="hero-search-icon" size={24} />
             <input 
               type="text" 
-              placeholder="Search for swerve drives, intakes, team numbers..." 
+              placeholder="" 
               className="hero-search-input"
             />
             <button type="submit" className="btn btn-primary hero-search-btn">Search</button>

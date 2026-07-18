@@ -87,7 +87,10 @@
 .search-icon {
   position: absolute;
   left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
   color: var(--color-text-muted);
+  pointer-events: none;
 }
 
 .profile-btn, .theme-toggle-btn {

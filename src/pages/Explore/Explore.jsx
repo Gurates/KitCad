@@ -40,7 +40,7 @@ const Explore = () => {
             <Search className="search-icon" size={18} />
             <input 
               type="text" 
-              placeholder="Search by name..." 
+              placeholder="" 
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />

@@ -24,7 +24,7 @@ const Navbar = () => {
         <div className="navbar-center desktop-only">
           <div className="search-bar">
             <Search className="search-icon" size={18} />
-            <input type="text" placeholder="Search models or teams..." />
+            <input type="text" placeholder="" />
           </div>
         </div>
 
@@ -49,7 +49,7 @@ const Navbar = () => {
           <div className="mobile-menu-search">
             <div className="search-bar">
               <Search className="search-icon" size={18} />
-              <input type="text" placeholder="Search models or teams..." style={{ width: '100%' }} />
+              <input type="text" placeholder="" style={{ width: '100%' }} />
             </div>
           </div>
           <div className="mobile-menu-links">
