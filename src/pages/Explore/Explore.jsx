@@ -1,25 +1,15 @@
-import React, { useState } from 'react';
-import { Search, Filter, ChevronRight, ChevronDown, FolderOpen, Folder } from 'lucide-react';
+import React, { useState, useMemo } from 'react';
+import { Search, ChevronRight, ChevronDown } from 'lucide-react';
 import ModelCard from '../../components/model/ModelCard';
 import { mockModels, categoryTree } from '../../data/mockData';
 import './Explore.css';
-
-// Helper: collect all descendant names from a node
-const collectNames = (node) => {
-  let names = [node.name];
-  if (node.children) {
-    node.children.forEach(child => {
-      names = names.concat(collectNames(child));
-    });
-  }
-  return names;
-};
 
 // Recursive tree node component
 const CategoryTreeNode = ({ node, depth, selectedCategories, toggleCategory, expandedNodes, toggleExpand }) => {
   const hasChildren = node.children && node.children.length > 0;
   const isExpanded = expandedNodes.includes(node.name);
   const isSelected = selectedCategories.includes(node.name);
+  const isTopLevel = depth === 0;
 
   // Count models that have this category
   const count = mockModels.filter(m => {
@@ -28,39 +18,44 @@ const CategoryTreeNode = ({ node, depth, selectedCategories, toggleCategory, exp
   }).length;
 
   return (
-    <>
-      <li
-        className={`tree-item ${isSelected ? 'active' : ''}`}
-        style={{ paddingLeft: `${depth * 16 + 8}px` }}
+    <li className={`tree-node ${isTopLevel ? 'top-level' : ''}`}>
+      <div
+        className={`tree-row ${isSelected ? 'selected' : ''} depth-${Math.min(depth, 3)}`}
+        style={{ paddingLeft: `${depth * 20 + 12}px` }}
       >
-        <div className="tree-item-left" onClick={() => toggleCategory(node.name)}>
-          <input
-            type="checkbox"
-            checked={isSelected}
-            readOnly
-            style={{ cursor: 'pointer', flexShrink: 0 }}
-          />
-          {hasChildren ? (
-            <FolderOpen size={14} className="tree-folder-icon" />
-          ) : (
-            <Folder size={14} className="tree-folder-icon" />
-          )}
-          <span className="tree-item-name">{node.name}</span>
+        {/* Expand/collapse toggle area */}
+        {hasChildren ? (
+          <button
+            className="tree-toggle"
+            onClick={(e) => { e.stopPropagation(); toggleExpand(node.name); }}
+            aria-label={isExpanded ? 'Collapse' : 'Expand'}
+          >
+            {isExpanded ? <ChevronDown size={15} /> : <ChevronRight size={15} />}
+          </button>
+        ) : (
+          <span className="tree-toggle-spacer" />
+        )}
+
+        {/* Clickable label area */}
+        <div className="tree-label" onClick={() => toggleCategory(node.name)}>
+          <span className="tree-checkbox-wrap">
+            <input
+              type="checkbox"
+              checked={isSelected}
+              readOnly
+              tabIndex={-1}
+            />
+          </span>
+          <span className="tree-name">{node.name}</span>
         </div>
-        <div className="tree-item-right">
-          {count > 0 && <span className="count">{count}</span>}
-          {hasChildren && (
-            <button
-              className="tree-expand-btn"
-              onClick={(e) => { e.stopPropagation(); toggleExpand(node.name); }}
-            >
-              {isExpanded ? <ChevronDown size={14} /> : <ChevronRight size={14} />}
-            </button>
-          )}
-        </div>
-      </li>
+
+        {/* Badge count */}
+        {count > 0 && <span className="tree-count">{count}</span>}
+      </div>
+
+      {/* Children */}
       {hasChildren && isExpanded && (
-        <ul className="tree-children">
+        <ul className="tree-branch">
           {node.children.map((child, idx) => (
             <CategoryTreeNode
               key={`${child.name}-${idx}`}
@@ -74,7 +69,7 @@ const CategoryTreeNode = ({ node, depth, selectedCategories, toggleCategory, exp
           ))}
         </ul>
       )}
-    </>
+    </li>
   );
 };
 
@@ -102,15 +97,13 @@ const Explore = () => {
   };
 
   // Filter models
-  const filteredModels = mockModels.filter(model => {
-    // 1. Filter by categories
+  const filteredModels = useMemo(() => mockModels.filter(model => {
     if (selectedCategories.length > 0) {
       const modelCats = model.categories || (model.category ? [model.category] : []);
       const hasMatch = selectedCategories.some(cat => modelCats.includes(cat));
       if (!hasMatch) return false;
     }
 
-    // 2. Filter by search term
     if (searchTerm) {
       const term = searchTerm.toLowerCase();
       const matchesName = model.name.toLowerCase().includes(term);
@@ -118,14 +111,11 @@ const Explore = () => {
       const matchesCategory = modelCats.some(cat => cat.toLowerCase().includes(term));
       const modelTags = model.features || [];
       const matchesFeature = modelTags.some(tag => tag.toLowerCase().includes(term));
-
-      if (!matchesName && !matchesCategory && !matchesFeature) {
-        return false;
-      }
+      if (!matchesName && !matchesCategory && !matchesFeature) return false;
     }
 
     return true;
-  });
+  }), [selectedCategories, searchTerm]);
 
   return (
     <div className="explore container">
@@ -152,15 +142,15 @@ const Explore = () => {
       <div className="explore-layout">
         <aside className="explore-sidebar">
           <div className="sidebar-section">
-            <div className="sidebar-title-row">
+            <div className="sidebar-header">
               <h3 className="sidebar-title">Categories</h3>
               {selectedCategories.length > 0 && (
-                <button className="clear-filters-btn" onClick={clearAll}>
-                  Clear ({selectedCategories.length})
+                <button className="clear-btn" onClick={clearAll}>
+                  Temizle
                 </button>
               )}
             </div>
-            <ul className="category-tree">
+            <ul className="tree-root">
               {categoryTree.map((node, idx) => (
                 <CategoryTreeNode
                   key={`${node.name}-${idx}`}
@@ -183,8 +173,8 @@ const Explore = () => {
                 <ModelCard key={model.id} model={model} />
               ))
             ) : (
-              <div style={{ padding: '2rem', textAlign: 'center', color: 'var(--color-text-muted)' }}>
-                No models found matching your filters.
+              <div className="no-results">
+                Bu filtrelere uygun model bulunamadı.
               </div>
             )}
           </div>
