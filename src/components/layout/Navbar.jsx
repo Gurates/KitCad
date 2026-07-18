@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Search, User, Menu, Moon, Sun } from 'lucide-react';
+import { Search, Menu, Moon, Sun } from 'lucide-react';
 import { useTheme } from '../ThemeContext';
 import './Navbar.css';
 
@@ -31,9 +31,6 @@ const Navbar = () => {
           <button onClick={toggleTheme} className="theme-toggle-btn desktop-only" aria-label="Toggle Theme">
             {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
           </button>
-          <Link to="/user/u1" className="profile-btn desktop-only">
-            <User size={20} />
-          </Link>
           <button className="mobile-menu-btn btn btn-ghost mobile-only">
             <Menu size={24} />
           </button>

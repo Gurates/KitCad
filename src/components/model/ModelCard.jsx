@@ -2,9 +2,18 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Download } from 'lucide-react';
 import '@google/model-viewer';
+import { downloadService } from '../../services/DownloadService';
 import './ModelCard.css';
 
 const ModelCard = ({ model }) => {
+  const [downloads, setDownloads] = React.useState(model.downloads || 0);
+
+  React.useEffect(() => {
+    downloadService.getCount(model.id).then(count => {
+      if (count > 0) setDownloads(count);
+    });
+  }, [model.id]);
+
   const stopPropagation = (e) => e.stopPropagation();
 
   return (
@@ -25,7 +34,7 @@ const ModelCard = ({ model }) => {
         </p>
         <div className="model-footer">
           <div className="model-stats">
-            <span className="stat"><Download size={14} /> {model.downloads}</span>
+            <span className="stat"><Download size={14} /> {downloads}</span>
           </div>
           <span className="model-date">{new Date(model.uploadDate).toLocaleDateString()}</span>
         </div>

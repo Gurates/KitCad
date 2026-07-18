@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { Heart, Download, Share2, Box } from 'lucide-react';
 import '@google/model-viewer'; // Import 3D viewer
 import { mockModels } from '../../data/mockData';
+import { downloadService } from '../../services/DownloadService';
 import './ModelDetails.css';
 
 const ModelDetails = () => {
@@ -11,6 +12,15 @@ const ModelDetails = () => {
 
   const [copied, setCopied] = useState(false);
   const [downloading, setDownloading] = useState(false);
+  const [downloads, setDownloads] = useState(model?.downloads || 0);
+
+  React.useEffect(() => {
+    if (model) {
+      downloadService.getCount(model.id).then(count => {
+        if (count > 0) setDownloads(count);
+      });
+    }
+  }, [model?.id]);
 
   const handleDownload = async () => {
     if (!model.rawUrl) {
@@ -49,6 +59,9 @@ Find more models at ${window.location.origin}`;
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
+
+      const newCount = await downloadService.incrementCount(model.id);
+      setDownloads(newCount);
     } catch (error) {
       console.error(error);
       alert("Error downloading file: " + error.message);
@@ -139,7 +152,7 @@ Find more models at ${window.location.origin}`;
             <div className="stats-list">
               <div className="stat-item">
                 <span className="stat-label">Downloads</span>
-                <span className="stat-value">{model.downloads}</span>
+                <span className="stat-value">{downloads}</span>
               </div>
               <div className="stat-item">
                 <span className="stat-label">File Size</span>
@@ -147,7 +160,7 @@ Find more models at ${window.location.origin}`;
               </div>
               <div className="stat-item">
                 <span className="stat-label">Format</span>
-                <span className="stat-value">STEP, SLDPRT</span>
+                <span className="stat-value">STEP</span>
               </div>
             </div>
           </div>

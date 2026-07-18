@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { UploadCloud, CheckCircle, FileUp, Lock, RefreshCw } from 'lucide-react';
 import { storageService } from '../../services/storageService';
 import { mockModels } from '../../data/mockData';
+import { downloadService } from '../../services/DownloadService';
 import './Admin.css';
 
 const Admin = () => {
@@ -22,6 +23,27 @@ const Admin = () => {
   const [isUploading, setIsUploading] = useState(false);
   const [uploadStatus, setUploadStatus] = useState(''); // 'uploading', 'success'
   const [progress, setProgress] = useState(0);
+
+  // Download Counts State
+  const [downloadCounts, setDownloadCounts] = useState({});
+  const [totalDownloads, setTotalDownloads] = useState(0);
+
+  React.useEffect(() => {
+    if (isAuthenticated) {
+      const fetchAllCounts = async () => {
+        const counts = {};
+        for (const model of mockModels) {
+          const count = await downloadService.getCount(model.id);
+          counts[model.id] = count;
+        }
+        setDownloadCounts(counts);
+
+        const total = await downloadService.getTotalDownloads();
+        setTotalDownloads(total);
+      };
+      fetchAllCounts();
+    }
+  }, [isAuthenticated]);
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -300,13 +322,34 @@ const Admin = () => {
         </div>
 
         <div className="admin-info-sidebar">
-          <div className="info-card card">
+          <div className="info-card card" style={{ marginBottom: 'var(--spacing-4)' }}>
             <h3>Pipeline Info</h3>
             <ul className="info-list">
               <li><strong>Storage:</strong> Cloudflare R2</li>
               <li><strong>Format:</strong> Raw CAD + GLB</li>
               <li><strong>Max Size:</strong> 500MB per file</li>
               <li><strong>Visibility:</strong> Public instantly</li>
+            </ul>
+          </div>
+
+          <div className="info-card card">
+            <h3 style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+              Model Downloads
+              <span style={{ fontSize: '0.8rem', color: 'var(--color-primary)', fontWeight: 'bold' }}>
+                Total: {totalDownloads}
+              </span>
+            </h3>
+            <ul className="info-list" style={{ maxHeight: '350px', overflowY: 'auto' }}>
+              {mockModels.map((model) => (
+                <li key={model.id} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: 'var(--spacing-2) 0', borderBottom: '1px solid var(--color-border)' }}>
+                  <span style={{ fontSize: '0.875rem', fontWeight: '500', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', maxWidth: '150px' }} title={model.name}>
+                    {model.name}
+                  </span>
+                  <span className="badge" style={{ backgroundColor: 'var(--color-primary-light)', color: 'var(--color-primary)', padding: '0.2rem 0.5rem', borderRadius: '4px', fontSize: '0.75rem', fontWeight: 'bold' }}>
+                    {downloadCounts[model.id] !== undefined ? downloadCounts[model.id] : '...'} downloads
+                  </span>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

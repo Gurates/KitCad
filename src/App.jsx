@@ -5,7 +5,6 @@ import Layout from './components/layout/Layout';
 import Home from './pages/Home/Home';
 import Explore from './pages/Explore/Explore';
 import ModelDetails from './pages/ModelDetails/ModelDetails';
-import UserProfile from './pages/UserProfile/UserProfile';
 import Admin from './pages/Admin/Admin';
 
 function App() {
@@ -17,7 +16,6 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/explore" element={<Explore />} />
             <Route path="/model/:id" element={<ModelDetails />} />
-            <Route path="/user/:id" element={<UserProfile />} />
             <Route path="/admin" element={<Admin />} />
           </Routes>
         </Layout>
