@@ -6,6 +6,7 @@ import Home from './pages/Home/Home';
 import Explore from './pages/Explore/Explore';
 import ModelDetails from './pages/ModelDetails/ModelDetails';
 import Admin from './pages/Admin/Admin';
+import SubmitModel from './pages/SubmitModel/SubmitModel';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path="/explore" element={<Explore />} />
             <Route path="/model/:id" element={<ModelDetails />} />
             <Route path="/admin" element={<Admin />} />
+            <Route path="/submit-model" element={<SubmitModel />} />
           </Routes>
         </Layout>
       </Router>

@@ -17,7 +17,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="container footer-bottom">
-        <p>&copy; {new Date().getFullYear()} KitCAD. Built for the FRC Community.</p>
+        <p>&copy; {new Date().getFullYear()} KitCAD. Built by Team 9021.</p>
       </div>
     </footer>
   );

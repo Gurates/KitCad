@@ -79,8 +79,9 @@ function localUploaderPlugin() {
     downloads: 0,
     uploadDate: '${new Date().toISOString().split('T')[0]}',
     thumbnail: '${thumbnailUrl}',
-    categories: ${JSON.stringify(data.categories || [])},
+    category: '${data.category}',
     features: ${JSON.stringify(data.features || [])},
+    fileSize: '${data.fileSize || 'Unknown'}',
     rawUrl: '${rawUrl}',
     glbUrl: '${glbUrl}'
   },`

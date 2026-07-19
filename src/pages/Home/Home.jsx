@@ -17,6 +17,7 @@ const Home = () => {
     <div className="home">
       {/* Hero Section */}
       <section className="hero-section">
+        <div className="hero-bg-text">9021</div>
         <div className="container hero-container">
           <h1 className="hero-title">The CAD Platform for the FRC Community</h1>
           <p className="hero-subtitle">Discover, share, and download thousands of CAD models built by and for FIRST Robotics Competition teams.</p>
@@ -26,7 +27,7 @@ const Home = () => {
               <Search className="hero-search-icon" size={24} />
               <input 
                 type="text" 
-                placeholder="" 
+                placeholder="Search..." 
                 className="hero-search-input"
               />
             </div>

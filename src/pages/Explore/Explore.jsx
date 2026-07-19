@@ -131,11 +131,6 @@ const Explore = () => {
               onChange={(e) => setSearchTerm(e.target.value)}
             />
           </div>
-          <select className="sort-select">
-            <option>Most Popular</option>
-            <option>Recently Added</option>
-            <option>Most Downloaded</option>
-          </select>
         </div>
       </div>
 

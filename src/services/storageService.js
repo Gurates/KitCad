@@ -46,11 +46,14 @@ export const storageService = {
       };
     }
 
+    const fileSize = stepFile ? (stepFile.size / (1024 * 1024)).toFixed(1) + ' MB' : 'Unknown';
+
     const payload = {
       name: modelName,
       teamNumber,
       categories,
       features,
+      fileSize,
       thumbFile: thumbFileData,
       stepFile: stepFileData,
       glbFile: glbFileData

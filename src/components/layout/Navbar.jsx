@@ -18,6 +18,7 @@ const Navbar = () => {
           </Link>
           <div className="navbar-links desktop-only">
             <Link to="/explore" className="nav-link">Explore</Link>
+            <Link to="/submit-model" className="nav-link" style={{color: 'var(--color-primary)', fontWeight: '600'}}>Submit Model</Link>
           </div>
         </div>
 
@@ -54,6 +55,7 @@ const Navbar = () => {
           </div>
           <div className="mobile-menu-links">
             <Link to="/explore" className="nav-link" onClick={() => setIsOpen(false)}>Explore</Link>
+            <Link to="/submit-model" className="nav-link" onClick={() => setIsOpen(false)} style={{color: 'var(--color-primary)', fontWeight: '600'}}>Submit Model</Link>
             <button onClick={() => { toggleTheme(); setIsOpen(false); }} className="mobile-theme-toggle nav-link">
               {theme === 'dark' ? (
                 <span style={{ display: 'flex', alignItems: 'center' }}><Sun size={18} style={{ marginRight: '8px' }} /> Light Mode</span>

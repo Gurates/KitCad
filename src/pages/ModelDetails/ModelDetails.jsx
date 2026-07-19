@@ -156,7 +156,7 @@ Find more models at ${window.location.origin}`;
               </div>
               <div className="stat-item">
                 <span className="stat-label">File Size</span>
-                <span className="stat-value">24.5 MB</span>
+                <span className="stat-value">{model.fileSize || 'Unknown'}</span>
               </div>
               <div className="stat-item">
                 <span className="stat-label">Format</span>
