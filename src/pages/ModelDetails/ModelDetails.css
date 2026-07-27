@@ -78,6 +78,28 @@
   font-size: 1.25rem;
 }
 
+.model-features {
+  padding: var(--spacing-6);
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.model-features h3 {
+  margin-bottom: var(--spacing-4);
+  font-size: 1.25rem;
+  color: var(--color-text-main);
+}
+
+.model-features ul {
+  list-style-type: disc;
+  padding-left: var(--spacing-6);
+  color: var(--color-text-muted);
+}
+
+.model-features li {
+  margin-bottom: var(--spacing-2);
+}
+
 .model-tags-full {
   display: flex;
   gap: var(--spacing-2);

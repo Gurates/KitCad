@@ -99,7 +99,6 @@ Find more models at ${window.location.origin}`;
 
       <div className="model-details-content">
         <div className="model-main">
-          {/* 3D Viewer */}
           <div className="model-viewer card">
             {model.glbUrl ? (
               <model-viewer
@@ -123,11 +122,11 @@ Find more models at ${window.location.origin}`;
           </div>
 
           {model.features && model.features.length > 0 && (
-            <div className="model-features card" style={{ marginTop: 'var(--spacing-6)' }}>
-              <h3 style={{ marginBottom: 'var(--spacing-4)', color: 'var(--color-text-main)' }}>Features</h3>
-              <ul style={{ listStyleType: 'disc', paddingLeft: 'var(--spacing-6)', color: 'var(--color-text-muted)' }}>
+            <div className="model-features card">
+              <h3>Features</h3>
+              <ul>
                 {model.features.map((feature, idx) => (
-                  <li key={idx} style={{ marginBottom: 'var(--spacing-2)' }}>{feature}</li>
+                  <li key={idx}>{feature}</li>
                 ))}
               </ul>
             </div>

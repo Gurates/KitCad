@@ -10,7 +10,6 @@ const Admin = () => {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
-  // Form State
   const [modelName, setModelName] = useState('');
   const [teamNumber, setTeamNumber] = useState('');
   const [categories, setCategories] = useState([]);
@@ -19,12 +18,10 @@ const Admin = () => {
   const [selectedStepFile, setSelectedStepFile] = useState(null);
   const [selectedGlbFile, setSelectedGlbFile] = useState(null);
 
-  // Upload Pipeline State
   const [isUploading, setIsUploading] = useState(false);
-  const [uploadStatus, setUploadStatus] = useState(''); // 'uploading', 'success'
+  const [uploadStatus, setUploadStatus] = useState('');
   const [progress, setProgress] = useState(0);
 
-  // Download Counts State
   const [downloadCounts, setDownloadCounts] = useState({});
   const [totalDownloads, setTotalDownloads] = useState(0);
 
@@ -58,7 +55,7 @@ const Admin = () => {
   const handleStepChange = (e) => {
     if (e.target.files && e.target.files[0]) setSelectedStepFile(e.target.files[0]);
   };
-  
+
   const handleGlbChange = (e) => {
     if (e.target.files && e.target.files[0]) setSelectedGlbFile(e.target.files[0]);
   };
@@ -75,22 +72,22 @@ const Admin = () => {
     }
 
     setIsUploading(true);
-    
+
     try {
       setUploadStatus('uploading');
       setProgress(0);
-      
+
       const featuresArray = features.split(',').map(f => f.trim()).filter(f => f);
 
       // Call local uploader plugin
       await storageService.localUpload(
-        modelName, 
-        teamNumber, 
+        modelName,
+        teamNumber,
         categories,
         featuresArray,
         selectedThumbFile,
-        selectedStepFile, 
-        selectedGlbFile, 
+        selectedStepFile,
+        selectedGlbFile,
         (p) => setProgress(p)
       );
 
@@ -129,9 +126,9 @@ const Admin = () => {
           </div>
           <form onSubmit={handleLogin} className="admin-login-form">
             <div className="form-group">
-              <input 
-                type="password" 
-                placeholder="Password (hint: admin123)" 
+              <input
+                type="password"
+                placeholder="Password (hint: admin123)"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 autoFocus
@@ -165,26 +162,26 @@ const Admin = () => {
             <form onSubmit={handleSubmit} className="upload-form">
               <div className="form-group">
                 <label>Model Name</label>
-                <input 
-                  type="text" 
+                <input
+                  type="text"
                   value={modelName}
                   onChange={(e) => setModelName(e.target.value)}
                   placeholder="e.g. Swerve Drive Module Mk4i"
                   disabled={isUploading}
-                  required 
+                  required
                 />
               </div>
 
               <div className="form-row">
                 <div className="form-group">
                   <label>Team Number</label>
-                  <input 
-                    type="text" 
+                  <input
+                    type="text"
                     value={teamNumber}
                     onChange={(e) => setTeamNumber(e.target.value)}
                     placeholder="e.g. 254"
                     disabled={isUploading}
-                    required 
+                    required
                   />
                 </div>
                 <div className="form-group">
@@ -232,8 +229,8 @@ const Admin = () => {
               <div className="form-row">
                 <div className="form-group">
                   <label>Features (comma separated)</label>
-                  <input 
-                    type="text" 
+                  <input
+                    type="text"
                     value={features}
                     onChange={(e) => setFeatures(e.target.value)}
                     placeholder="e.g. Robust, Custom intake, Dual motor"
@@ -246,8 +243,8 @@ const Admin = () => {
                 <div className="form-group">
                   <label>Original CAD (STEP/ZIP) <small>- Optional</small></label>
                   <div className={`file-drop-area ${selectedStepFile ? 'has-file' : ''}`}>
-                    <input 
-                      type="file" 
+                    <input
+                      type="file"
                       onChange={handleStepChange}
                       disabled={isUploading}
                       accept=".step,.stp,.sldprt,.sldasm,.zip"
@@ -272,8 +269,8 @@ const Admin = () => {
                 <div className="form-group">
                   <label>Thumbnail Image (PNG/JPG)</label>
                   <div className={`file-drop-area ${selectedThumbFile ? 'has-file' : ''}`}>
-                    <input 
-                      type="file" 
+                    <input
+                      type="file"
                       onChange={handleThumbChange}
                       disabled={isUploading}
                       accept=".png,.jpg,.jpeg,.webp"
@@ -298,8 +295,8 @@ const Admin = () => {
                 <div className="form-group">
                   <label>Web 3D Viewer (GLB) <small>- Required</small></label>
                   <div className={`file-drop-area ${selectedGlbFile ? 'has-file' : ''}`}>
-                    <input 
-                      type="file" 
+                    <input
+                      type="file"
                       onChange={handleGlbChange}
                       disabled={isUploading}
                       accept=".glb,.gltf"
@@ -325,20 +322,20 @@ const Admin = () => {
               {isUploading && (
                 <div className="upload-progress-container">
                   <div className="progress-status">
-                    <span><RefreshCw size={16} className="spin"/> Writing files to public folder...</span>
+                    <span><RefreshCw size={16} className="spin" /> Writing files to public folder...</span>
                     <span>{progress}%</span>
                   </div>
                   <div className="progress-bar-bg">
-                    <div 
-                      className={`progress-bar-fill`} 
+                    <div
+                      className={`progress-bar-fill`}
                       style={{ width: `${progress}%` }}
                     ></div>
                   </div>
                 </div>
               )}
 
-              <button 
-                type="submit" 
+              <button
+                type="submit"
                 className="btn btn-primary btn-full upload-submit-btn"
                 disabled={isUploading || !selectedGlbFile || !modelName || !teamNumber}
               >

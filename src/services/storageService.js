@@ -1,23 +1,14 @@
-/**
- * Local Storage Service for Development
- * Connects to the custom Vite Plugin at /api/local-upload
- */
-
 const fileToBase64 = (file) => new Promise((resolve, reject) => {
   const reader = new FileReader();
   reader.readAsDataURL(file);
-  reader.onload = () => resolve(reader.result.split(',')[1]); // Get just base64 string
+  reader.onload = () => resolve(reader.result.split(',')[1]);
   reader.onerror = error => reject(error);
 });
 
 export const storageService = {
-  /**
-   * Upload both files to the local Vite Dev Server API
-   */
   async localUpload(modelName, teamNumber, categories, features, thumbFile, stepFile, glbFile, onProgress) {
     if (onProgress) onProgress(20);
     
-    // Convert files to base64
     let stepFileData = null;
     let glbFileData = null;
     let thumbFileData = null;
