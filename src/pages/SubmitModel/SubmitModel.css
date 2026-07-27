@@ -113,18 +113,17 @@
 
 .email-link {
   display: inline-block;
-  font-size: clamp(1rem, 4.5vw, 1.35rem);
+  font-size: clamp(0.75rem, 3.8vw, 1.35rem);
   font-weight: 700;
   color: var(--color-primary);
   text-decoration: none;
-  padding: var(--spacing-3) var(--spacing-4);
+  padding: 0.6rem 0.8rem;
   background-color: var(--color-primary-light);
   border-radius: var(--radius-md);
   margin-bottom: var(--spacing-md);
   transition: all 0.2s ease;
   max-width: 100%;
-  word-break: break-all;
-  overflow-wrap: anywhere;
+  white-space: nowrap;
 }
 
 .email-link:hover {
