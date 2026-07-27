@@ -12,7 +12,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 35rem;
+  font-size: clamp(6rem, 28vw, 35rem);
   font-weight: 900;
   color: var(--color-text-main);
   opacity: 0.1;
@@ -22,6 +22,7 @@
   letter-spacing: -0.05em;
   font-family: inherit;
   line-height: 1;
+  white-space: nowrap;
 }
 
 .hero-container {
@@ -203,12 +204,24 @@
 }
 
 @media (max-width: 768px) {
+  .hero-bg-text {
+    font-size: clamp(5rem, 25vw, 16rem);
+    opacity: 0.06;
+    top: 40%;
+  }
+
   .hero-title {
     font-size: 2.75rem;
   }
 }
 
 @media (max-width: 576px) {
+  .hero-bg-text {
+    font-size: clamp(3.5rem, 22vw, 9rem);
+    opacity: 0.05;
+    top: 35%;
+  }
+
   .hero-section {
     padding: var(--spacing-10) var(--spacing-4) var(--spacing-8);
   }
