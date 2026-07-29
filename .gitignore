@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Raw asset import sources
+KITCAD (2)/
+KITCAD (2)
+

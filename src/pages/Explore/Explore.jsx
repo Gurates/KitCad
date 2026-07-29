@@ -4,14 +4,12 @@ import ModelCard from '../../components/model/ModelCard';
 import { mockModels, categoryTree } from '../../data/mockData';
 import './Explore.css';
 
-// Recursive tree node component
 const CategoryTreeNode = ({ node, depth, selectedCategories, toggleCategory, expandedNodes, toggleExpand }) => {
   const hasChildren = node.children && node.children.length > 0;
   const isExpanded = expandedNodes.includes(node.name);
   const isSelected = selectedCategories.includes(node.name);
   const isTopLevel = depth === 0;
 
-  // Count models that have this category
   const count = mockModels.filter(m => {
     const cats = m.categories || (m.category ? [m.category] : []);
     return cats.includes(node.name);
@@ -23,7 +21,6 @@ const CategoryTreeNode = ({ node, depth, selectedCategories, toggleCategory, exp
         className={`tree-row ${isSelected ? 'selected' : ''} depth-${Math.min(depth, 3)}`}
         style={{ paddingLeft: `${depth * 20 + 12}px` }}
       >
-        {/* Expand/collapse toggle area */}
         {hasChildren ? (
           <button
             className="tree-toggle"
@@ -36,7 +33,6 @@ const CategoryTreeNode = ({ node, depth, selectedCategories, toggleCategory, exp
           <span className="tree-toggle-spacer" />
         )}
 
-        {/* Clickable label area */}
         <div className="tree-label" onClick={() => toggleCategory(node.name)}>
           <span className="tree-checkbox-wrap">
             <input
@@ -49,11 +45,9 @@ const CategoryTreeNode = ({ node, depth, selectedCategories, toggleCategory, exp
           <span className="tree-name">{node.name}</span>
         </div>
 
-        {/* Badge count */}
         {count > 0 && <span className="tree-count">{count}</span>}
       </div>
 
-      {/* Children */}
       {hasChildren && isExpanded && (
         <ul className="tree-branch">
           {node.children.map((child, idx) => (
@@ -96,7 +90,6 @@ const Explore = () => {
     );
   };
 
-  // Filter models
   const filteredModels = useMemo(() => mockModels.filter(model => {
     if (selectedCategories.length > 0) {
       const modelCats = model.categories || (model.category ? [model.category] : []);

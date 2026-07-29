@@ -79,7 +79,6 @@ const Admin = () => {
 
       const featuresArray = features.split(',').map(f => f.trim()).filter(f => f);
 
-      // Call local uploader plugin
       await storageService.localUpload(
         modelName,
         teamNumber,
