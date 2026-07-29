@@ -43,7 +43,7 @@ const Home = () => {
           <Link to="/explore" className="section-link">View all <ArrowRight size={16} /></Link>
         </div>
         <div className="models-grid">
-          {mockModels.slice(0, 4).map(model => (
+          {mockModels.slice(0, 6).map(model => (
             <ModelCard key={model.id} model={model} />
           ))}
         </div>
