@@ -152,9 +152,9 @@
   color: var(--color-primary-hover);
 }
 
-.models-grid {
+.home .models-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: var(--spacing-6);
 }
 
@@ -203,6 +203,12 @@
   margin-top: var(--spacing-2);
 }
 
+@media (max-width: 1024px) {
+  .home .models-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
   .hero-bg-text {
     font-size: clamp(5rem, 25vw, 16rem);
@@ -216,6 +222,10 @@
 }
 
 @media (max-width: 576px) {
+  .home .models-grid {
+    grid-template-columns: 1fr;
+  }
+
   .hero-bg-text {
     font-size: clamp(3.5rem, 22vw, 9rem);
     opacity: 0.05;
