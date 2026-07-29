@@ -154,10 +154,6 @@ Find more models at ${window.location.origin}`;
                 <span className="stat-value">{downloads}</span>
               </div>
               <div className="stat-item">
-                <span className="stat-label">File Size</span>
-                <span className="stat-value">{model.fileSize || 'Unknown'}</span>
-              </div>
-              <div className="stat-item">
                 <span className="stat-label">Format</span>
                 <span className="stat-value">STEP</span>
               </div>
