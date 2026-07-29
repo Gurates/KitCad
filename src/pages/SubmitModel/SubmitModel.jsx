@@ -52,7 +52,7 @@ const SubmitModel = () => {
                 <Mail className="email-icon" size={32} />
                 <h2 className="email-title">Contact Our Team</h2>
                 <p className="email-desc">Send your submission to:</p>
-                <a href="mailto:uselesscase9021@gmail.com" className="email-link">uselesscase9021@gmail.com</a>
+                <a href="mailto:contact@incredibal9021.com" className="email-link">contact@incredibal9021.com</a>
                 <p className="email-note">We will review your submission and add it to our platform as soon as possible.</p>
               </div>
             </div>
