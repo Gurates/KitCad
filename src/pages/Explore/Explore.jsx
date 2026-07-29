@@ -1,4 +1,5 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import { Search, ChevronRight, ChevronDown } from 'lucide-react';
 import ModelCard from '../../components/model/ModelCard';
 import { mockModels, categoryTree } from '../../data/mockData';
@@ -68,9 +69,27 @@ const CategoryTreeNode = ({ node, depth, selectedCategories, toggleCategory, exp
 };
 
 const Explore = () => {
+  const [searchParams, setSearchParams] = useSearchParams();
   const [selectedCategories, setSelectedCategories] = useState([]);
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState(searchParams.get('search') || searchParams.get('q') || '');
   const [expandedNodes, setExpandedNodes] = useState([]);
+
+  useEffect(() => {
+    const q = searchParams.get('search') || searchParams.get('q');
+    if (q !== null) {
+      setSearchTerm(q);
+    }
+  }, [searchParams]);
+
+  const handleSearchChange = (e) => {
+    const val = e.target.value;
+    setSearchTerm(val);
+    if (val) {
+      setSearchParams({ search: val });
+    } else {
+      setSearchParams({});
+    }
+  };
 
   const toggleCategory = (catName) => {
     setSelectedCategories(prev =>
@@ -119,9 +138,9 @@ const Explore = () => {
             <Search className="search-icon" size={18} />
             <input
               type="text"
-              placeholder=""
+              placeholder="Search by name or category..."
               value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
+              onChange={handleSearchChange}
             />
           </div>
         </div>

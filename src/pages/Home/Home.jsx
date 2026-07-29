@@ -7,10 +7,15 @@ import './Home.css';
 
 const Home = () => {
   const navigate = useNavigate();
+  const [searchQuery, setSearchQuery] = React.useState('');
 
   const handleSearch = (e) => {
     e.preventDefault();
-    navigate('/explore');
+    if (searchQuery.trim()) {
+      navigate(`/explore?search=${encodeURIComponent(searchQuery.trim())}`);
+    } else {
+      navigate('/explore');
+    }
   };
 
   return (
@@ -27,8 +32,10 @@ const Home = () => {
               <Search className="hero-search-icon" size={24} />
               <input 
                 type="text" 
-                placeholder="Search..." 
+                placeholder="Search by name or category..." 
                 className="hero-search-input"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
               />
             </div>
             <button type="submit" className="btn btn-primary hero-search-btn">Search</button>

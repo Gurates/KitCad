@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Search, Menu, Moon, Sun, X } from 'lucide-react';
+import { Menu, Moon, Sun, X } from 'lucide-react';
 import { useTheme } from '../ThemeContext';
 import './Navbar.css';
 
@@ -22,13 +22,6 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="navbar-center desktop-only">
-          <div className="search-bar">
-            <Search className="search-icon" size={18} />
-            <input type="text" placeholder="" />
-          </div>
-        </div>
-
         <div className="navbar-right">
           <button onClick={toggleTheme} className="theme-toggle-btn desktop-only" aria-label="Toggle Theme">
             {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
@@ -47,12 +40,6 @@ const Navbar = () => {
       {/* Mobile Menu Panel */}
       {isOpen && (
         <div className="mobile-menu mobile-only">
-          <div className="mobile-menu-search">
-            <div className="search-bar">
-              <Search className="search-icon" size={18} />
-              <input type="text" placeholder="" style={{ width: '100%' }} />
-            </div>
-          </div>
           <div className="mobile-menu-links">
             <Link to="/explore" className="nav-link" onClick={() => setIsOpen(false)}>Explore</Link>
             <Link to="/submit-model" className="nav-link" onClick={() => setIsOpen(false)} style={{color: 'var(--color-primary)', fontWeight: '600'}}>Submit Model</Link>
