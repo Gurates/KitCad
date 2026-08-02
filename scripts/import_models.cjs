@@ -132,7 +132,7 @@ for (const stepPath of stepFiles) {
   const overrides = {
     "LIMELIGHT3ACAD_STEP.stp": { img: "limelight3A2-640x640.jpg", glb: "LIMELIGHT3ACAD_STEP.glb" },
     "LIMELIGHT3CAD_STEP.stp": { img: "limeligth3.jpg", glb: "LIMELIGHT3CAD_STEP.glb" },
-    "LIMELIGHT3GCAD_STEP.stp": { img: "limelight3G.png", glb: "LIMELIGHT3GCAD_STEP.stp" },
+    "LIMELIGHT3GCAD_STEP.stp": { img: "limelight3G.png", glb: "LIMELIGHT3GCAD_STEP.glb" },
     "LIMELIGHT4CAD_STEP.stp": { img: "limelight4.jpg", glb: "LIMELIGHT4CAD_STEP.glb" },
     "LimelightCAD1STEP.stp": { img: "limelight1.png", glb: "LimelightCAD1STEP.glb" },
     "LimelightCAD2STEPSimp.stp": { img: "limelight2.jpg", glb: "LimelightCAD2STEPSimp.glb" },
