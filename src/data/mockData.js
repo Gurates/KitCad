@@ -72,7 +72,7 @@ export const mockModels = [
     "teamName": "Team 9021",
     "downloads": 0,
     "uploadDate": "2026-07-29",
-    "thumbnail": "/models/m17853361568435/model_thumb.jpg",
+    "thumbnail": "/models/m17853361568435/model_thumb.png",
     "categories": [
       "ELEKTRONİK",
       "Güç Sistemleri",

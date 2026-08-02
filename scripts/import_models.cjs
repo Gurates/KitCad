@@ -52,28 +52,28 @@ function matchFile(sourceName, targetFiles) {
   if (sourceTokens.length === 0) return null;
   const cleanSource = sourceTokens.join('');
   const sourceFirstToken = sourceTokens[0];
-  
+
   let bestMatch = null;
   let maxScore = -1;
 
   for (const target of targetFiles) {
     const targetTokens = getTokens(target);
     if (targetTokens.length === 0) continue;
-    
+
     let score = 0;
-    
+
     if (sourceFirstToken === targetTokens[0]) {
       score += 50;
     }
-    
+
     const cleanTarget = targetTokens.join('');
-    
+
     if (cleanSource.includes(cleanTarget)) {
-      score += (cleanTarget.length / cleanSource.length) * 30; 
+      score += (cleanTarget.length / cleanSource.length) * 30;
     } else if (cleanTarget.includes(cleanSource)) {
       score += (cleanSource.length / cleanTarget.length) * 30;
     }
-    
+
     const lcsLen = lcs(cleanSource, cleanTarget);
     score += (lcsLen / Math.max(cleanSource.length, cleanTarget.length)) * 20;
 
@@ -92,7 +92,7 @@ function matchFile(sourceName, targetFiles) {
       bestMatch = target;
     }
   }
-  
+
   if (maxScore > 10) {
     return bestMatch;
   }
@@ -121,7 +121,7 @@ for (const stepPath of stepFiles) {
   // Get categories from the directory structure relative to KITCAD_ROOT
   const relativeDir = path.dirname(path.relative(KITCAD_ROOT, stepPath));
   let categories = relativeDir.split(path.sep).filter(Boolean);
-  
+
   // Clean up categories (uppercase first level typically)
   if (categories.length > 0) {
     categories[0] = categories[0].toUpperCase();
@@ -132,7 +132,7 @@ for (const stepPath of stepFiles) {
   const overrides = {
     "LIMELIGHT3ACAD_STEP.stp": { img: "limelight3A2-640x640.jpg", glb: "LIMELIGHT3ACAD_STEP.glb" },
     "LIMELIGHT3CAD_STEP.stp": { img: "limeligth3.jpg", glb: "LIMELIGHT3CAD_STEP.glb" },
-    "LIMELIGHT3GCAD_STEP.stp": { img: "limeligth3.jpg", glb: "LIMELIGHT3GCAD_STEP.glb" },
+    "LIMELIGHT3GCAD_STEP.stp": { img: "limelight3G.png", glb: "LIMELIGHT3CAD_STEP.glb" },
     "LIMELIGHT4CAD_STEP.stp": { img: "limelight4.jpg", glb: "LIMELIGHT4CAD_STEP.glb" },
     "LimelightCAD1STEP.stp": { img: "limelight1.png", glb: "LimelightCAD1STEP.glb" },
     "LimelightCAD2STEPSimp.stp": { img: "limelight2.jpg", glb: "LimelightCAD2STEPSimp.glb" },
