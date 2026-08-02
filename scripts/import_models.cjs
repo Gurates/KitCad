@@ -145,6 +145,7 @@ for (const stepPath of stepFiles) {
     "CİM(Pinion).STEP": { img: "am-0255_700x700.webp", glb: "CİM(Pinion).glb" },
     "CİM(Yalın).STEP": { img: "am-0255_700x700.webp", glb: "CİM(Yalın).glb" },
     "Minion.STEP": { img: "CTR-Electronics-Minion-Brushless-Standalone-Motor.webp", glb: "Minion.glb" },
+    "PDH_Breaker_Extractor.STEP": { img: "PDH_Breaker_Extractor.jpeg", glb: "PDH_Breaker_Extractor.glb" },
   };
 
   let matchedGlb = null;
