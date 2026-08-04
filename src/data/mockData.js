@@ -8,8 +8,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m17853361567441/model_thumb.png",
     "categories": [
-      "ELEKTRONİK",
-      "Güç Sistemleri"
+      "ELECTRONICS",
+      "Power Systems"
     ],
     "features": [],
     "rawUrl": "/models/m17853361567441/model_raw.STEP",
@@ -24,8 +24,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m17853361567712/model_thumb.webp",
     "categories": [
-      "ELEKTRONİK",
-      "Güç Sistemleri"
+      "ELECTRONICS",
+      "Power Systems"
     ],
     "features": [],
     "rawUrl": "/models/m17853361567712/model_raw.STEP",
@@ -40,8 +40,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m17853361567923/model_thumb.jpg",
     "categories": [
-      "ELEKTRONİK",
-      "Güç Sistemleri",
+      "ELECTRONICS",
+      "Power Systems",
       "Lımelight Series"
     ],
     "features": [],
@@ -57,8 +57,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m17853361568134/model_thumb.jpg",
     "categories": [
-      "ELEKTRONİK",
-      "Güç Sistemleri",
+      "ELECTRONICS",
+      "Power Systems",
       "Lımelight Series"
     ],
     "features": [],
@@ -74,8 +74,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m17853361568435/model_thumb.png",
     "categories": [
-      "ELEKTRONİK",
-      "Güç Sistemleri",
+      "ELECTRONICS",
+      "Power Systems",
       "Lımelight Series"
     ],
     "features": [],
@@ -91,8 +91,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m17853361568616/model_thumb.jpg",
     "categories": [
-      "ELEKTRONİK",
-      "Güç Sistemleri",
+      "ELECTRONICS",
+      "Power Systems",
       "Lımelight Series"
     ],
     "features": [],
@@ -108,8 +108,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m17853361568757/model_thumb.png",
     "categories": [
-      "ELEKTRONİK",
-      "Güç Sistemleri",
+      "ELECTRONICS",
+      "Power Systems",
       "Lımelight Series"
     ],
     "features": [],
@@ -125,8 +125,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m17853361568998/model_thumb.jpg",
     "categories": [
-      "ELEKTRONİK",
-      "Güç Sistemleri",
+      "ELECTRONICS",
+      "Power Systems",
       "Lımelight Series"
     ],
     "features": [],
@@ -142,8 +142,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m17853361569239/model_thumb.png",
     "categories": [
-      "ELEKTRONİK",
-      "Güç Sistemleri"
+      "ELECTRONICS",
+      "Power Systems"
     ],
     "features": [],
     "rawUrl": "/models/m17853361569239/model_raw.STEP",
@@ -158,8 +158,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615695610/model_thumb.png",
     "categories": [
-      "ELEKTRONİK",
-      "Güç Sistemleri"
+      "ELECTRONICS",
+      "Power Systems"
     ],
     "features": [],
     "rawUrl": "/models/m178533615695610/model_raw.STEP",
@@ -174,8 +174,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615702211/model_thumb.png",
     "categories": [
-      "ELEKTRONİK",
-      "Güç Sistemleri"
+      "ELECTRONICS",
+      "Power Systems"
     ],
     "features": [],
     "rawUrl": "/models/m178533615702211/model_raw.STEP",
@@ -190,8 +190,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615710512/model_thumb.jpeg",
     "categories": [
-      "ELEKTRONİK",
-      "Güç Sistemleri"
+      "ELECTRONICS",
+      "Power Systems"
     ],
     "features": [],
     "rawUrl": "/models/m178533615710512/model_raw.STEP",
@@ -206,8 +206,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615712313/model_thumb.webp",
     "categories": [
-      "ELEKTRONİK",
-      "Güç Sistemleri"
+      "ELECTRONICS",
+      "Power Systems"
     ],
     "features": [],
     "rawUrl": "/models/m178533615712313/model_raw.step",
@@ -222,8 +222,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615714714/model_thumb.png",
     "categories": [
-      "ELEKTRONİK",
-      "Güç Sistemleri"
+      "ELECTRONICS",
+      "Power Systems"
     ],
     "features": [],
     "rawUrl": "/models/m178533615714714/model_raw.step",
@@ -238,8 +238,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615716615/model_thumb.png",
     "categories": [
-      "ELEKTRONİK",
-      "Motor Controller"
+      "ELECTRONICS",
+      "Motor Controllers"
     ],
     "features": [],
     "rawUrl": "/models/m178533615716615/model_raw.STEP",
@@ -254,8 +254,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615722216/model_thumb.png",
     "categories": [
-      "ELEKTRONİK",
-      "Motor Controller"
+      "ELECTRONICS",
+      "Motor Controllers"
     ],
     "features": [],
     "rawUrl": "/models/m178533615722216/model_raw.STEP",
@@ -270,8 +270,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615725317/model_thumb.png",
     "categories": [
-      "ELEKTRONİK",
-      "Motor Controller"
+      "ELECTRONICS",
+      "Motor Controllers"
     ],
     "features": [],
     "rawUrl": "/models/m178533615725317/model_raw.STEP",
@@ -286,8 +286,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615728718/model_thumb.jpg",
     "categories": [
-      "ELEKTRONİK",
-      "Motor Controller"
+      "ELECTRONICS",
+      "Motor Controllers"
     ],
     "features": [],
     "rawUrl": "/models/m178533615728718/model_raw.STEP",
@@ -302,8 +302,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615737119/model_thumb.webp",
     "categories": [
-      "ELEKTRONİK",
-      "Motorlar"
+      "ELECTRONICS",
+      "Motors"
     ],
     "features": [],
     "rawUrl": "/models/m178533615737119/model_raw.STEP",
@@ -318,8 +318,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615738620/model_thumb.webp",
     "categories": [
-      "ELEKTRONİK",
-      "Motorlar"
+      "ELECTRONICS",
+      "Motors"
     ],
     "features": [],
     "rawUrl": "/models/m178533615738620/model_raw.STEP",
@@ -334,8 +334,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615740221/model_thumb.webp",
     "categories": [
-      "ELEKTRONİK",
-      "Motorlar"
+      "ELECTRONICS",
+      "Motors"
     ],
     "features": [],
     "rawUrl": "/models/m178533615740221/model_raw.step",
@@ -350,8 +350,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615743422/model_thumb.webp",
     "categories": [
-      "ELEKTRONİK",
-      "Motorlar"
+      "ELECTRONICS",
+      "Motors"
     ],
     "features": [],
     "rawUrl": "/models/m178533615743422/model_raw.STEP",
@@ -366,8 +366,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615746523/model_thumb.webp",
     "categories": [
-      "ELEKTRONİK",
-      "Motorlar"
+      "ELECTRONICS",
+      "Motors"
     ],
     "features": [],
     "rawUrl": "/models/m178533615746523/model_raw.STEP",
@@ -382,8 +382,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615749124/model_thumb.png",
     "categories": [
-      "ELEKTRONİK",
-      "Motorlar"
+      "ELECTRONICS",
+      "Motors"
     ],
     "features": [],
     "rawUrl": "/models/m178533615749124/model_raw.STEP",
@@ -398,8 +398,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615751425/model_thumb.png",
     "categories": [
-      "ELEKTRONİK",
-      "Motorlar"
+      "ELECTRONICS",
+      "Motors"
     ],
     "features": [],
     "rawUrl": "/models/m178533615751425/model_raw.STEP",
@@ -414,8 +414,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615754126/model_thumb.png",
     "categories": [
-      "ELEKTRONİK",
-      "Motorlar"
+      "ELECTRONICS",
+      "Motors"
     ],
     "features": [],
     "rawUrl": "/models/m178533615754126/model_raw.STEP",
@@ -430,8 +430,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615759227/model_thumb.png",
     "categories": [
-      "ELEKTRONİK",
-      "Motorlar"
+      "ELECTRONICS",
+      "Motors"
     ],
     "features": [],
     "rawUrl": "/models/m178533615759227/model_raw.STEP",
@@ -446,8 +446,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615762128/model_thumb.jpg",
     "categories": [
-      "ELEKTRONİK",
-      "Sensörler"
+      "ELECTRONICS",
+      "Sensors"
     ],
     "features": [],
     "rawUrl": "/models/m178533615762128/model_raw.STEP",
@@ -462,8 +462,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615764329/model_thumb.jpg",
     "categories": [
-      "ELEKTRONİK",
-      "Sensörler"
+      "ELECTRONICS",
+      "Sensors"
     ],
     "features": [],
     "rawUrl": "/models/m178533615764329/model_raw.STEP",
@@ -478,8 +478,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615766630/model_thumb.jpg",
     "categories": [
-      "ELEKTRONİK",
-      "Sensörler"
+      "ELECTRONICS",
+      "Sensors"
     ],
     "features": [],
     "rawUrl": "/models/m178533615766630/model_raw.STEP",
@@ -494,8 +494,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615768731/model_thumb.jpg",
     "categories": [
-      "ELEKTRONİK",
-      "Sensörler"
+      "ELECTRONICS",
+      "Sensors"
     ],
     "features": [],
     "rawUrl": "/models/m178533615768731/model_raw.STEP",
@@ -510,8 +510,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615770932/model_thumb.png",
     "categories": [
-      "ELEKTRONİK",
-      "Sensörler"
+      "ELECTRONICS",
+      "Sensors"
     ],
     "features": [],
     "rawUrl": "/models/m178533615770932/model_raw.STEP",
@@ -526,7 +526,7 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615774133/model_thumb.png",
     "categories": [
-      "HAZIR MEKANİZMALAR"
+      "PRE-BUILT MECHANISMS"
     ],
     "features": [],
     "rawUrl": "/models/m178533615774133/model_raw.STEP",
@@ -541,7 +541,7 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615779034/model_thumb.webp",
     "categories": [
-      "HAZIR MEKANİZMALAR"
+      "PRE-BUILT MECHANISMS"
     ],
     "features": [],
     "rawUrl": "/models/m178533615779034/model_raw.STEP",
@@ -556,7 +556,7 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615784935/model_thumb.png",
     "categories": [
-      "HAZIR MEKANİZMALAR"
+      "PRE-BUILT MECHANISMS"
     ],
     "features": [],
     "rawUrl": "/models/m178533615784935/model_raw.STEP",
@@ -571,7 +571,7 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615788736/model_thumb.png",
     "categories": [
-      "HAZIR MEKANİZMALAR"
+      "PRE-BUILT MECHANISMS"
     ],
     "features": [],
     "rawUrl": "/models/m178533615788736/model_raw.step",
@@ -586,7 +586,7 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615793937/model_thumb.png",
     "categories": [
-      "HAZIR MEKANİZMALAR"
+      "PRE-BUILT MECHANISMS"
     ],
     "features": [],
     "rawUrl": "/models/m178533615793937/model_raw.STEP",
@@ -601,7 +601,7 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615798338/model_thumb.png",
     "categories": [
-      "HAZIR MEKANİZMALAR"
+      "PRE-BUILT MECHANISMS"
     ],
     "features": [],
     "rawUrl": "/models/m178533615798338/model_raw.STEP",
@@ -616,8 +616,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615805339/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Bağlantı Elemanları",
+      "MECHANICS",
+      "Fasteners",
       "Insert"
     ],
     "features": [],
@@ -633,8 +633,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615807140/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Bağlantı Elemanları",
+      "MECHANICS",
+      "Fasteners",
       "Insert"
     ],
     "features": [],
@@ -650,8 +650,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615809441/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Bağlantı Elemanları",
+      "MECHANICS",
+      "Fasteners",
       "Insert"
     ],
     "features": [],
@@ -667,8 +667,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615811642/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Bağlantı Elemanları",
+      "MECHANICS",
+      "Fasteners",
       "Insert"
     ],
     "features": [],
@@ -684,8 +684,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615813643/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Bağlantı Elemanları",
+      "MECHANICS",
+      "Fasteners",
       "Nuts"
     ],
     "features": [],
@@ -701,8 +701,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615815444/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Bağlantı Elemanları",
+      "MECHANICS",
+      "Fasteners",
       "Nuts"
     ],
     "features": [],
@@ -718,8 +718,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615817245/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Bağlantı Elemanları",
+      "MECHANICS",
+      "Fasteners",
       "Nuts"
     ],
     "features": [],
@@ -735,8 +735,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615818946/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Bağlantı Elemanları",
+      "MECHANICS",
+      "Fasteners",
       "Nuts"
     ],
     "features": [],
@@ -752,8 +752,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615820647/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Bağlantı Elemanları",
+      "MECHANICS",
+      "Fasteners",
       "Nuts"
     ],
     "features": [],
@@ -769,8 +769,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615822548/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Bağlantı Elemanları",
+      "MECHANICS",
+      "Fasteners",
       "Nuts"
     ],
     "features": [],
@@ -786,8 +786,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615824249/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Bağlantı Elemanları",
+      "MECHANICS",
+      "Fasteners",
       "Nuts"
     ],
     "features": [],
@@ -803,8 +803,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615825950/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Bağlantı Elemanları",
+      "MECHANICS",
+      "Fasteners",
       "Nuts"
     ],
     "features": [],
@@ -820,8 +820,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615827451/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Bağlantı Elemanları",
+      "MECHANICS",
+      "Fasteners",
       "Nuts"
     ],
     "features": [],
@@ -837,8 +837,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615829252/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Güç aktarma",
+      "MECHANICS",
+      "Power Transmission",
       "Adapters"
     ],
     "features": [],
@@ -854,8 +854,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615831653/model_thumb.jpg",
     "categories": [
-      "MEKANİK",
-      "Güç aktarma",
+      "MECHANICS",
+      "Power Transmission",
       "Adapters"
     ],
     "features": [],
@@ -871,8 +871,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615834554/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Güç aktarma",
+      "MECHANICS",
+      "Power Transmission",
       "Adapters"
     ],
     "features": [],
@@ -888,8 +888,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615836755/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Güç aktarma",
+      "MECHANICS",
+      "Power Transmission",
       "Collar clamp"
     ],
     "features": [],
@@ -905,8 +905,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615839556/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Güç aktarma",
+      "MECHANICS",
+      "Power Transmission",
       "Collar clamp"
     ],
     "features": [],
@@ -922,8 +922,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615842457/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Güç aktarma",
+      "MECHANICS",
+      "Power Transmission",
       "Collar clamp"
     ],
     "features": [],
@@ -939,8 +939,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615844958/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Güç aktarma",
+      "MECHANICS",
+      "Power Transmission",
       "Collar clamp"
     ],
     "features": [],
@@ -956,8 +956,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615847459/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Güç aktarma",
+      "MECHANICS",
+      "Power Transmission",
       "Collar clamp"
     ],
     "features": [],
@@ -973,8 +973,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615849160/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Güç aktarma",
+      "MECHANICS",
+      "Power Transmission",
       "Collar clamp"
     ],
     "features": [],
@@ -990,8 +990,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615851361/model_thumb.jpg",
     "categories": [
-      "MEKANİK",
-      "Güç aktarma",
+      "MECHANICS",
+      "Power Transmission",
       "GEARBOXES"
     ],
     "features": [],
@@ -1007,8 +1007,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615853962/model_thumb.jpg",
     "categories": [
-      "MEKANİK",
-      "Güç aktarma",
+      "MECHANICS",
+      "Power Transmission",
       "GEARBOXES"
     ],
     "features": [],
@@ -1024,8 +1024,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615856663/model_thumb.jpg",
     "categories": [
-      "MEKANİK",
-      "Güç aktarma",
+      "MECHANICS",
+      "Power Transmission",
       "GEARBOXES"
     ],
     "features": [],
@@ -1041,8 +1041,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615859364/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Güç aktarma",
+      "MECHANICS",
+      "Power Transmission",
       "GEARBOXES"
     ],
     "features": [],
@@ -1058,8 +1058,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615863265/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Güç aktarma",
+      "MECHANICS",
+      "Power Transmission",
       "GEARBOXES"
     ],
     "features": [],
@@ -1075,8 +1075,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615867166/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Güç aktarma",
+      "MECHANICS",
+      "Power Transmission",
       "Kasnaklar"
     ],
     "features": [],
@@ -1092,8 +1092,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615869167/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Güç aktarma",
+      "MECHANICS",
+      "Power Transmission",
       "Kasnaklar"
     ],
     "features": [],
@@ -1109,8 +1109,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615871168/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Güç aktarma",
+      "MECHANICS",
+      "Power Transmission",
       "Kasnaklar"
     ],
     "features": [],
@@ -1126,8 +1126,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615872969/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Güç aktarma",
+      "MECHANICS",
+      "Power Transmission",
       "Kasnaklar"
     ],
     "features": [],
@@ -1143,8 +1143,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615874670/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Güç aktarma",
+      "MECHANICS",
+      "Power Transmission",
       "Kasnaklar"
     ],
     "features": [],
@@ -1160,8 +1160,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615876671/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Güç aktarma",
+      "MECHANICS",
+      "Power Transmission",
       "Kasnaklar"
     ],
     "features": [],
@@ -1177,8 +1177,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615878572/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Güç aktarma",
+      "MECHANICS",
+      "Power Transmission",
       "Kasnaklar"
     ],
     "features": [],
@@ -1194,8 +1194,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615880373/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Güç aktarma",
+      "MECHANICS",
+      "Power Transmission",
       "Kasnaklar"
     ],
     "features": [],
@@ -1211,8 +1211,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615882374/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Güç aktarma",
+      "MECHANICS",
+      "Power Transmission",
       "Kasnaklar"
     ],
     "features": [],
@@ -1228,8 +1228,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615884175/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Güç aktarma",
+      "MECHANICS",
+      "Power Transmission",
       "Kasnaklar"
     ],
     "features": [],
@@ -1245,8 +1245,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615886076/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Güç aktarma",
+      "MECHANICS",
+      "Power Transmission",
       "Kasnaklar"
     ],
     "features": [],
@@ -1262,8 +1262,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615887877/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Güç aktarma",
+      "MECHANICS",
+      "Power Transmission",
       "Kasnaklar"
     ],
     "features": [],
@@ -1279,8 +1279,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615890178/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Güç aktarma",
+      "MECHANICS",
+      "Power Transmission",
       "Kasnaklar"
     ],
     "features": [],
@@ -1296,8 +1296,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615892679/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Güç aktarma",
+      "MECHANICS",
+      "Power Transmission",
       "Kasnaklar"
     ],
     "features": [],
@@ -1313,8 +1313,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615895780/model_thumb.webp",
     "categories": [
-      "MEKANİK",
-      "Pnömatik"
+      "MECHANICS",
+      "Pneumatics"
     ],
     "features": [],
     "rawUrl": "/models/m178533615895780/model_raw.STEP",
@@ -1329,8 +1329,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615899381/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Pnömatik"
+      "MECHANICS",
+      "Pneumatics"
     ],
     "features": [],
     "rawUrl": "/models/m178533615899381/model_raw.STEP",
@@ -1345,8 +1345,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615902182/model_thumb.webp",
     "categories": [
-      "MEKANİK",
-      "Pnömatik"
+      "MECHANICS",
+      "Pneumatics"
     ],
     "features": [],
     "rawUrl": "/models/m178533615902182/model_raw.STEP",
@@ -1361,8 +1361,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615905183/model_thumb.webp",
     "categories": [
-      "MEKANİK",
-      "Pnömatik"
+      "MECHANICS",
+      "Pneumatics"
     ],
     "features": [],
     "rawUrl": "/models/m178533615905183/model_raw.STEP",
@@ -1377,8 +1377,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615908184/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Rulmanlar",
+      "MECHANICS",
+      "Bearings",
       "rulman"
     ],
     "features": [],
@@ -1394,8 +1394,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615911385/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Rulmanlar",
+      "MECHANICS",
+      "Bearings",
       "rulman"
     ],
     "features": [],
@@ -1411,8 +1411,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615914186/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Rulmanlar",
+      "MECHANICS",
+      "Bearings",
       "rulman"
     ],
     "features": [],
@@ -1428,8 +1428,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615916887/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Rulmanlar",
+      "MECHANICS",
+      "Bearings",
       "rulman"
     ],
     "features": [],
@@ -1445,8 +1445,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615919288/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Rulmanlar",
+      "MECHANICS",
+      "Bearings",
       "rulman"
     ],
     "features": [],
@@ -1462,8 +1462,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615922089/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Rulmanlar",
+      "MECHANICS",
+      "Bearings",
       "rulman"
     ],
     "features": [],
@@ -1479,8 +1479,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615924890/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Rulmanlar",
+      "MECHANICS",
+      "Bearings",
       "rulman"
     ],
     "features": [],
@@ -1496,8 +1496,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615927691/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Rulmanlar",
+      "MECHANICS",
+      "Bearings",
       "rulman"
     ],
     "features": [],
@@ -1513,8 +1513,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615930592/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Rulmanlar",
+      "MECHANICS",
+      "Bearings",
       "rulman"
     ],
     "features": [],
@@ -1530,8 +1530,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615933693/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Rulmanlar",
+      "MECHANICS",
+      "Bearings",
       "rulman"
     ],
     "features": [],
@@ -1547,8 +1547,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615936794/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Rulmanlar",
+      "MECHANICS",
+      "Bearings",
       "rulman"
     ],
     "features": [],
@@ -1564,8 +1564,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615939195/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Rulmanlar",
+      "MECHANICS",
+      "Bearings",
       "rulman"
     ],
     "features": [],
@@ -1581,8 +1581,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615941796/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Rulmanlar",
+      "MECHANICS",
+      "Bearings",
       "rulman"
     ],
     "features": [],
@@ -1598,8 +1598,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615944197/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Rulmanlar",
+      "MECHANICS",
+      "Bearings",
       "rulman"
     ],
     "features": [],
@@ -1615,8 +1615,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615946698/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Rulmanlar",
+      "MECHANICS",
+      "Bearings",
       "rulman"
     ],
     "features": [],
@@ -1632,8 +1632,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m178533615949099/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Rulmanlar",
+      "MECHANICS",
+      "Bearings",
       "rulman"
     ],
     "features": [],
@@ -1649,8 +1649,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336159513100/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Rulmanlar",
+      "MECHANICS",
+      "Bearings",
       "rulman"
     ],
     "features": [],
@@ -1666,8 +1666,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336159530101/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Rulmanlar",
+      "MECHANICS",
+      "Bearings",
       "rulman"
     ],
     "features": [],
@@ -1683,8 +1683,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336159549102/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Rulmanlar",
+      "MECHANICS",
+      "Bearings",
       "rulman"
     ],
     "features": [],
@@ -1700,8 +1700,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336159569103/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Rulmanlar",
+      "MECHANICS",
+      "Bearings",
       "rulman"
     ],
     "features": [],
@@ -1717,8 +1717,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336159590104/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Rulmanlar",
+      "MECHANICS",
+      "Bearings",
       "rulman"
     ],
     "features": [],
@@ -1734,8 +1734,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336159610105/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Rulmanlar",
+      "MECHANICS",
+      "Bearings",
       "rulman"
     ],
     "features": [],
@@ -1751,8 +1751,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336159632106/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Rulmanlar",
+      "MECHANICS",
+      "Bearings",
       "rulman"
     ],
     "features": [],
@@ -1768,8 +1768,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336159653107/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Rulmanlar",
+      "MECHANICS",
+      "Bearings",
       "rulman"
     ],
     "features": [],
@@ -1785,8 +1785,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336159674108/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Rulmanlar",
+      "MECHANICS",
+      "Bearings",
       "rulman"
     ],
     "features": [],
@@ -1802,8 +1802,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336159697109/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Rulmanlar",
+      "MECHANICS",
+      "Bearings",
       "rulman"
     ],
     "features": [],
@@ -1819,8 +1819,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336159719110/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Rulmanlar",
+      "MECHANICS",
+      "Bearings",
       "rulman"
     ],
     "features": [],
@@ -1836,8 +1836,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336159743111/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "Rulmanlar",
+      "MECHANICS",
+      "Bearings",
       "rulman"
     ],
     "features": [],
@@ -1853,8 +1853,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336159777112/model_thumb.webp",
     "categories": [
-      "MEKANİK",
-      "wheels"
+      "MECHANICS",
+      "Wheels"
     ],
     "features": [],
     "rawUrl": "/models/m1785336159777112/model_raw.STEP",
@@ -1869,8 +1869,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336159833113/model_thumb.webp",
     "categories": [
-      "MEKANİK",
-      "wheels"
+      "MECHANICS",
+      "Wheels"
     ],
     "features": [],
     "rawUrl": "/models/m1785336159833113/model_raw.STEP",
@@ -1885,8 +1885,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336159890114/model_thumb.webp",
     "categories": [
-      "MEKANİK",
-      "wheels"
+      "MECHANICS",
+      "Wheels"
     ],
     "features": [],
     "rawUrl": "/models/m1785336159890114/model_raw.STEP",
@@ -1901,8 +1901,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336159937115/model_thumb.webp",
     "categories": [
-      "MEKANİK",
-      "wheels"
+      "MECHANICS",
+      "Wheels"
     ],
     "features": [],
     "rawUrl": "/models/m1785336159937115/model_raw.STEP",
@@ -1917,8 +1917,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336159982116/model_thumb.webp",
     "categories": [
-      "MEKANİK",
-      "wheels"
+      "MECHANICS",
+      "Wheels"
     ],
     "features": [],
     "rawUrl": "/models/m1785336159982116/model_raw.STEP",
@@ -1933,8 +1933,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336160013117/model_thumb.webp",
     "categories": [
-      "MEKANİK",
-      "wheels"
+      "MECHANICS",
+      "Wheels"
     ],
     "features": [],
     "rawUrl": "/models/m1785336160013117/model_raw.STEP",
@@ -1949,8 +1949,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336160048118/model_thumb.webp",
     "categories": [
-      "MEKANİK",
-      "wheels"
+      "MECHANICS",
+      "Wheels"
     ],
     "features": [],
     "rawUrl": "/models/m1785336160048118/model_raw.STEP",
@@ -1965,8 +1965,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336160088119/model_thumb.webp",
     "categories": [
-      "MEKANİK",
-      "wheels"
+      "MECHANICS",
+      "Wheels"
     ],
     "features": [],
     "rawUrl": "/models/m1785336160088119/model_raw.STEP",
@@ -1981,8 +1981,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336160121120/model_thumb.webp",
     "categories": [
-      "MEKANİK",
-      "wheels"
+      "MECHANICS",
+      "Wheels"
     ],
     "features": [],
     "rawUrl": "/models/m1785336160121120/model_raw.STEP",
@@ -1997,8 +1997,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336160159121/model_thumb.avif",
     "categories": [
-      "MEKANİK",
-      "wheels"
+      "MECHANICS",
+      "Wheels"
     ],
     "features": [],
     "rawUrl": "/models/m1785336160159121/model_raw.STEP",
@@ -2013,8 +2013,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336160194122/model_thumb.webp",
     "categories": [
-      "MEKANİK",
-      "wheels"
+      "MECHANICS",
+      "Wheels"
     ],
     "features": [],
     "rawUrl": "/models/m1785336160194122/model_raw.STEP",
@@ -2029,8 +2029,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336160225123/model_thumb.webp",
     "categories": [
-      "MEKANİK",
-      "wheels"
+      "MECHANICS",
+      "Wheels"
     ],
     "features": [],
     "rawUrl": "/models/m1785336160225123/model_raw.STEP",
@@ -2045,8 +2045,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336160262124/model_thumb.webp",
     "categories": [
-      "MEKANİK",
-      "wheels"
+      "MECHANICS",
+      "Wheels"
     ],
     "features": [],
     "rawUrl": "/models/m1785336160262124/model_raw.STEP",
@@ -2061,8 +2061,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336160301125/model_thumb.webp",
     "categories": [
-      "MEKANİK",
-      "wheels"
+      "MECHANICS",
+      "Wheels"
     ],
     "features": [],
     "rawUrl": "/models/m1785336160301125/model_raw.STEP",
@@ -2077,8 +2077,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336160346126/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "wheels"
+      "MECHANICS",
+      "Wheels"
     ],
     "features": [],
     "rawUrl": "/models/m1785336160346126/model_raw.STEP",
@@ -2093,8 +2093,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336160398127/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "wheels"
+      "MECHANICS",
+      "Wheels"
     ],
     "features": [],
     "rawUrl": "/models/m1785336160398127/model_raw.STEP",
@@ -2109,8 +2109,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336160426128/model_thumb.webp",
     "categories": [
-      "MEKANİK",
-      "wheels"
+      "MECHANICS",
+      "Wheels"
     ],
     "features": [],
     "rawUrl": "/models/m1785336160426128/model_raw.STEP",
@@ -2125,8 +2125,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336160465129/model_thumb.webp",
     "categories": [
-      "MEKANİK",
-      "wheels"
+      "MECHANICS",
+      "Wheels"
     ],
     "features": [],
     "rawUrl": "/models/m1785336160465129/model_raw.STEP",
@@ -2141,8 +2141,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336160515130/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "wheels"
+      "MECHANICS",
+      "Wheels"
     ],
     "features": [],
     "rawUrl": "/models/m1785336160515130/model_raw.STEP",
@@ -2157,8 +2157,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336160569131/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "wheels"
+      "MECHANICS",
+      "Wheels"
     ],
     "features": [],
     "rawUrl": "/models/m1785336160569131/model_raw.STEP",
@@ -2173,8 +2173,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336160610132/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "wheels"
+      "MECHANICS",
+      "Wheels"
     ],
     "features": [],
     "rawUrl": "/models/m1785336160610132/model_raw.STEP",
@@ -2189,8 +2189,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336160655133/model_thumb.webp",
     "categories": [
-      "MEKANİK",
-      "wheels"
+      "MECHANICS",
+      "Wheels"
     ],
     "features": [],
     "rawUrl": "/models/m1785336160655133/model_raw.STEP",
@@ -2205,8 +2205,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336160689134/model_thumb.webp",
     "categories": [
-      "MEKANİK",
-      "wheels"
+      "MECHANICS",
+      "Wheels"
     ],
     "features": [],
     "rawUrl": "/models/m1785336160689134/model_raw.STEP",
@@ -2221,8 +2221,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336160745135/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "wheels"
+      "MECHANICS",
+      "Wheels"
     ],
     "features": [],
     "rawUrl": "/models/m1785336160745135/model_raw.STEP",
@@ -2237,8 +2237,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336160789136/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "wheels"
+      "MECHANICS",
+      "Wheels"
     ],
     "features": [],
     "rawUrl": "/models/m1785336160789136/model_raw.STEP",
@@ -2253,8 +2253,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336160827137/model_thumb.webp",
     "categories": [
-      "MEKANİK",
-      "wheels"
+      "MECHANICS",
+      "Wheels"
     ],
     "features": [],
     "rawUrl": "/models/m1785336160827137/model_raw.STEP",
@@ -2269,8 +2269,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336160869138/model_thumb.webp",
     "categories": [
-      "MEKANİK",
-      "wheels"
+      "MECHANICS",
+      "Wheels"
     ],
     "features": [],
     "rawUrl": "/models/m1785336160869138/model_raw.STEP",
@@ -2285,8 +2285,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336160914139/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "wheels"
+      "MECHANICS",
+      "Wheels"
     ],
     "features": [],
     "rawUrl": "/models/m1785336160914139/model_raw.STEP",
@@ -2301,8 +2301,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336160960140/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "wheels"
+      "MECHANICS",
+      "Wheels"
     ],
     "features": [],
     "rawUrl": "/models/m1785336160960140/model_raw.STEP",
@@ -2317,8 +2317,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336161003141/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "wheels"
+      "MECHANICS",
+      "Wheels"
     ],
     "features": [],
     "rawUrl": "/models/m1785336161003141/model_raw.STEP",
@@ -2333,8 +2333,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336161051142/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "wheels"
+      "MECHANICS",
+      "Wheels"
     ],
     "features": [],
     "rawUrl": "/models/m1785336161051142/model_raw.STEP",
@@ -2349,8 +2349,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336161092143/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "wheels"
+      "MECHANICS",
+      "Wheels"
     ],
     "features": [],
     "rawUrl": "/models/m1785336161092143/model_raw.STEP",
@@ -2365,8 +2365,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336161134144/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "wheels"
+      "MECHANICS",
+      "Wheels"
     ],
     "features": [],
     "rawUrl": "/models/m1785336161134144/model_raw.STEP",
@@ -2381,8 +2381,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336161171145/model_thumb.webp",
     "categories": [
-      "MEKANİK",
-      "wheels"
+      "MECHANICS",
+      "Wheels"
     ],
     "features": [],
     "rawUrl": "/models/m1785336161171145/model_raw.STEP",
@@ -2397,8 +2397,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336161207146/model_thumb.webp",
     "categories": [
-      "MEKANİK",
-      "wheels"
+      "MECHANICS",
+      "Wheels"
     ],
     "features": [],
     "rawUrl": "/models/m1785336161207146/model_raw.STEP",
@@ -2413,8 +2413,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336161241147/model_thumb.avif",
     "categories": [
-      "MEKANİK",
-      "wheels"
+      "MECHANICS",
+      "Wheels"
     ],
     "features": [],
     "rawUrl": "/models/m1785336161241147/model_raw.STEP",
@@ -2429,8 +2429,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336161272148/model_thumb.webp",
     "categories": [
-      "MEKANİK",
-      "wheels"
+      "MECHANICS",
+      "Wheels"
     ],
     "features": [],
     "rawUrl": "/models/m1785336161272148/model_raw.STEP",
@@ -2445,8 +2445,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336161307149/model_thumb.webp",
     "categories": [
-      "MEKANİK",
-      "wheels"
+      "MECHANICS",
+      "Wheels"
     ],
     "features": [],
     "rawUrl": "/models/m1785336161307149/model_raw.STEP",
@@ -2461,8 +2461,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336161347150/model_thumb.avif",
     "categories": [
-      "MEKANİK",
-      "wheels"
+      "MECHANICS",
+      "Wheels"
     ],
     "features": [],
     "rawUrl": "/models/m1785336161347150/model_raw.STEP",
@@ -2477,8 +2477,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336161602151/model_thumb.avif",
     "categories": [
-      "MEKANİK",
-      "wheels"
+      "MECHANICS",
+      "Wheels"
     ],
     "features": [],
     "rawUrl": "/models/m1785336161602151/model_raw.STEP",
@@ -2493,8 +2493,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336161656152/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "wheels"
+      "MECHANICS",
+      "Wheels"
     ],
     "features": [],
     "rawUrl": "/models/m1785336161656152/model_raw.STEP",
@@ -2509,8 +2509,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336161720153/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "wheels"
+      "MECHANICS",
+      "Wheels"
     ],
     "features": [],
     "rawUrl": "/models/m1785336161720153/model_raw.STEP",
@@ -2525,8 +2525,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336161759154/model_thumb.webp",
     "categories": [
-      "MEKANİK",
-      "wheels"
+      "MECHANICS",
+      "Wheels"
     ],
     "features": [],
     "rawUrl": "/models/m1785336161759154/model_raw.STEP",
@@ -2541,8 +2541,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336161795155/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "wheels"
+      "MECHANICS",
+      "Wheels"
     ],
     "features": [],
     "rawUrl": "/models/m1785336161795155/model_raw.STEP",
@@ -2557,8 +2557,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336161823156/model_thumb.webp",
     "categories": [
-      "MEKANİK",
-      "wheels"
+      "MECHANICS",
+      "Wheels"
     ],
     "features": [],
     "rawUrl": "/models/m1785336161823156/model_raw.STEP",
@@ -2573,8 +2573,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336161873157/model_thumb.webp",
     "categories": [
-      "MEKANİK",
-      "wheels"
+      "MECHANICS",
+      "Wheels"
     ],
     "features": [],
     "rawUrl": "/models/m1785336161873157/model_raw.STEP",
@@ -2589,8 +2589,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336161940158/model_thumb.webp",
     "categories": [
-      "MEKANİK",
-      "wheels"
+      "MECHANICS",
+      "Wheels"
     ],
     "features": [],
     "rawUrl": "/models/m1785336161940158/model_raw.STEP",
@@ -2605,8 +2605,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336161976159/model_thumb.jpg",
     "categories": [
-      "MEKANİK",
-      "şase",
+      "MECHANICS",
+      "Chassis",
       "Bumper Brackets"
     ],
     "features": [],
@@ -2622,8 +2622,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336161999160/model_thumb.jpg",
     "categories": [
-      "MEKANİK",
-      "şase",
+      "MECHANICS",
+      "Chassis",
       "Bumper Brackets"
     ],
     "features": [],
@@ -2639,8 +2639,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336162025161/model_thumb.png",
     "categories": [
-      "MEKANİK",
-      "şase",
+      "MECHANICS",
+      "Chassis",
       "Bumper Brackets"
     ],
     "features": [],
@@ -2656,8 +2656,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336162062162/model_thumb.jpg",
     "categories": [
-      "MEKANİK",
-      "şase",
+      "MECHANICS",
+      "Chassis",
       "Swerve Modules",
       "MK4 Family"
     ],
@@ -2674,8 +2674,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336162221163/model_thumb.jpg",
     "categories": [
-      "MEKANİK",
-      "şase",
+      "MECHANICS",
+      "Chassis",
       "Swerve Modules",
       "MK4 Family"
     ],
@@ -2692,8 +2692,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336162369164/model_thumb.webp",
     "categories": [
-      "MEKANİK",
-      "şase",
+      "MECHANICS",
+      "Chassis",
       "Swerve Modules",
       "MK4 Family"
     ],
@@ -2710,8 +2710,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336162469165/model_thumb.jpg",
     "categories": [
-      "MEKANİK",
-      "şase",
+      "MECHANICS",
+      "Chassis",
       "Swerve Modules",
       "MK4 Family"
     ],
@@ -2728,8 +2728,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336162576166/model_thumb.jpg",
     "categories": [
-      "MEKANİK",
-      "şase",
+      "MECHANICS",
+      "Chassis",
       "Swerve Modules",
       "MK5 Family"
     ],
@@ -2746,8 +2746,8 @@ export const mockModels = [
     "uploadDate": "2026-07-29",
     "thumbnail": "/models/m1785336162614167/model_thumb.jpg",
     "categories": [
-      "MEKANİK",
-      "şase",
+      "MECHANICS",
+      "Chassis",
       "Swerve Modules",
       "MK5 Family"
     ],
