@@ -1077,7 +1077,7 @@ export const mockModels = [
     "categories": [
       "MECHANICS",
       "Power Transmission",
-      "Kasnaklar"
+      "Pulleys"
     ],
     "features": [],
     "rawUrl": "/models/m178533615867166/model_raw.stp",
@@ -1094,7 +1094,7 @@ export const mockModels = [
     "categories": [
       "MECHANICS",
       "Power Transmission",
-      "Kasnaklar"
+      "Pulleys"
     ],
     "features": [],
     "rawUrl": "/models/m178533615869167/model_raw.stp",
@@ -1111,7 +1111,7 @@ export const mockModels = [
     "categories": [
       "MECHANICS",
       "Power Transmission",
-      "Kasnaklar"
+      "Pulleys"
     ],
     "features": [],
     "rawUrl": "/models/m178533615871168/model_raw.stp",
@@ -1128,7 +1128,7 @@ export const mockModels = [
     "categories": [
       "MECHANICS",
       "Power Transmission",
-      "Kasnaklar"
+      "Pulleys"
     ],
     "features": [],
     "rawUrl": "/models/m178533615872969/model_raw.stp",
@@ -1145,7 +1145,7 @@ export const mockModels = [
     "categories": [
       "MECHANICS",
       "Power Transmission",
-      "Kasnaklar"
+      "Pulleys"
     ],
     "features": [],
     "rawUrl": "/models/m178533615874670/model_raw.stp",
@@ -1162,7 +1162,7 @@ export const mockModels = [
     "categories": [
       "MECHANICS",
       "Power Transmission",
-      "Kasnaklar"
+      "Pulleys"
     ],
     "features": [],
     "rawUrl": "/models/m178533615876671/model_raw.stp",
@@ -1179,7 +1179,7 @@ export const mockModels = [
     "categories": [
       "MECHANICS",
       "Power Transmission",
-      "Kasnaklar"
+      "Pulleys"
     ],
     "features": [],
     "rawUrl": "/models/m178533615878572/model_raw.stp",
@@ -1196,7 +1196,7 @@ export const mockModels = [
     "categories": [
       "MECHANICS",
       "Power Transmission",
-      "Kasnaklar"
+      "Pulleys"
     ],
     "features": [],
     "rawUrl": "/models/m178533615880373/model_raw.stp",
@@ -1213,7 +1213,7 @@ export const mockModels = [
     "categories": [
       "MECHANICS",
       "Power Transmission",
-      "Kasnaklar"
+      "Pulleys"
     ],
     "features": [],
     "rawUrl": "/models/m178533615882374/model_raw.stp",
@@ -1230,7 +1230,7 @@ export const mockModels = [
     "categories": [
       "MECHANICS",
       "Power Transmission",
-      "Kasnaklar"
+      "Pulleys"
     ],
     "features": [],
     "rawUrl": "/models/m178533615884175/model_raw.stp",
@@ -1247,7 +1247,7 @@ export const mockModels = [
     "categories": [
       "MECHANICS",
       "Power Transmission",
-      "Kasnaklar"
+      "Pulleys"
     ],
     "features": [],
     "rawUrl": "/models/m178533615886076/model_raw.stp",
@@ -1264,7 +1264,7 @@ export const mockModels = [
     "categories": [
       "MECHANICS",
       "Power Transmission",
-      "Kasnaklar"
+      "Pulleys"
     ],
     "features": [],
     "rawUrl": "/models/m178533615887877/model_raw.stp",
@@ -1281,7 +1281,7 @@ export const mockModels = [
     "categories": [
       "MECHANICS",
       "Power Transmission",
-      "Kasnaklar"
+      "Pulleys"
     ],
     "features": [],
     "rawUrl": "/models/m178533615890178/model_raw.stp",
@@ -1298,7 +1298,7 @@ export const mockModels = [
     "categories": [
       "MECHANICS",
       "Power Transmission",
-      "Kasnaklar"
+      "Pulleys"
     ],
     "features": [],
     "rawUrl": "/models/m178533615892679/model_raw.stp",
@@ -1379,7 +1379,7 @@ export const mockModels = [
     "categories": [
       "MECHANICS",
       "Bearings",
-      "rulman"
+      "Bearings"
     ],
     "features": [],
     "rawUrl": "/models/m178533615908184/model_raw.STEP",
@@ -1396,7 +1396,7 @@ export const mockModels = [
     "categories": [
       "MECHANICS",
       "Bearings",
-      "rulman"
+      "Bearings"
     ],
     "features": [],
     "rawUrl": "/models/m178533615911385/model_raw.STEP",
@@ -1413,7 +1413,7 @@ export const mockModels = [
     "categories": [
       "MECHANICS",
       "Bearings",
-      "rulman"
+      "Bearings"
     ],
     "features": [],
     "rawUrl": "/models/m178533615914186/model_raw.STEP",
@@ -1430,7 +1430,7 @@ export const mockModels = [
     "categories": [
       "MECHANICS",
       "Bearings",
-      "rulman"
+      "Bearings"
     ],
     "features": [],
     "rawUrl": "/models/m178533615916887/model_raw.STEP",
@@ -1447,7 +1447,7 @@ export const mockModels = [
     "categories": [
       "MECHANICS",
       "Bearings",
-      "rulman"
+      "Bearings"
     ],
     "features": [],
     "rawUrl": "/models/m178533615919288/model_raw.STEP",
@@ -1464,7 +1464,7 @@ export const mockModels = [
     "categories": [
       "MECHANICS",
       "Bearings",
-      "rulman"
+      "Bearings"
     ],
     "features": [],
     "rawUrl": "/models/m178533615922089/model_raw.STEP",
@@ -1481,7 +1481,7 @@ export const mockModels = [
     "categories": [
       "MECHANICS",
       "Bearings",
-      "rulman"
+      "Bearings"
     ],
     "features": [],
     "rawUrl": "/models/m178533615924890/model_raw.STEP",
@@ -1498,7 +1498,7 @@ export const mockModels = [
     "categories": [
       "MECHANICS",
       "Bearings",
-      "rulman"
+      "Bearings"
     ],
     "features": [],
     "rawUrl": "/models/m178533615927691/model_raw.STEP",
@@ -1515,7 +1515,7 @@ export const mockModels = [
     "categories": [
       "MECHANICS",
       "Bearings",
-      "rulman"
+      "Bearings"
     ],
     "features": [],
     "rawUrl": "/models/m178533615930592/model_raw.STEP",
@@ -1532,7 +1532,7 @@ export const mockModels = [
     "categories": [
       "MECHANICS",
       "Bearings",
-      "rulman"
+      "Bearings"
     ],
     "features": [],
     "rawUrl": "/models/m178533615933693/model_raw.STEP",
@@ -1549,7 +1549,7 @@ export const mockModels = [
     "categories": [
       "MECHANICS",
       "Bearings",
-      "rulman"
+      "Bearings"
     ],
     "features": [],
     "rawUrl": "/models/m178533615936794/model_raw.STEP",
@@ -1566,7 +1566,7 @@ export const mockModels = [
     "categories": [
       "MECHANICS",
       "Bearings",
-      "rulman"
+      "Bearings"
     ],
     "features": [],
     "rawUrl": "/models/m178533615939195/model_raw.STEP",
@@ -1583,7 +1583,7 @@ export const mockModels = [
     "categories": [
       "MECHANICS",
       "Bearings",
-      "rulman"
+      "Bearings"
     ],
     "features": [],
     "rawUrl": "/models/m178533615941796/model_raw.STEP",
@@ -1600,7 +1600,7 @@ export const mockModels = [
     "categories": [
       "MECHANICS",
       "Bearings",
-      "rulman"
+      "Bearings"
     ],
     "features": [],
     "rawUrl": "/models/m178533615944197/model_raw.STEP",
@@ -1617,7 +1617,7 @@ export const mockModels = [
     "categories": [
       "MECHANICS",
       "Bearings",
-      "rulman"
+      "Bearings"
     ],
     "features": [],
     "rawUrl": "/models/m178533615946698/model_raw.STEP",
@@ -1634,7 +1634,7 @@ export const mockModels = [
     "categories": [
       "MECHANICS",
       "Bearings",
-      "rulman"
+      "Bearings"
     ],
     "features": [],
     "rawUrl": "/models/m178533615949099/model_raw.STEP",
@@ -1651,7 +1651,7 @@ export const mockModels = [
     "categories": [
       "MECHANICS",
       "Bearings",
-      "rulman"
+      "Bearings"
     ],
     "features": [],
     "rawUrl": "/models/m1785336159513100/model_raw.STEP",
@@ -1668,7 +1668,7 @@ export const mockModels = [
     "categories": [
       "MECHANICS",
       "Bearings",
-      "rulman"
+      "Bearings"
     ],
     "features": [],
     "rawUrl": "/models/m1785336159530101/model_raw.step",
@@ -1685,7 +1685,7 @@ export const mockModels = [
     "categories": [
       "MECHANICS",
       "Bearings",
-      "rulman"
+      "Bearings"
     ],
     "features": [],
     "rawUrl": "/models/m1785336159549102/model_raw.stp",
@@ -1702,7 +1702,7 @@ export const mockModels = [
     "categories": [
       "MECHANICS",
       "Bearings",
-      "rulman"
+      "Bearings"
     ],
     "features": [],
     "rawUrl": "/models/m1785336159569103/model_raw.stp",
@@ -1719,7 +1719,7 @@ export const mockModels = [
     "categories": [
       "MECHANICS",
       "Bearings",
-      "rulman"
+      "Bearings"
     ],
     "features": [],
     "rawUrl": "/models/m1785336159590104/model_raw.stp",
@@ -1736,7 +1736,7 @@ export const mockModels = [
     "categories": [
       "MECHANICS",
       "Bearings",
-      "rulman"
+      "Bearings"
     ],
     "features": [],
     "rawUrl": "/models/m1785336159610105/model_raw.stp",
@@ -1753,7 +1753,7 @@ export const mockModels = [
     "categories": [
       "MECHANICS",
       "Bearings",
-      "rulman"
+      "Bearings"
     ],
     "features": [],
     "rawUrl": "/models/m1785336159632106/model_raw.stp",
@@ -1770,7 +1770,7 @@ export const mockModels = [
     "categories": [
       "MECHANICS",
       "Bearings",
-      "rulman"
+      "Bearings"
     ],
     "features": [],
     "rawUrl": "/models/m1785336159653107/model_raw.stp",
@@ -1787,7 +1787,7 @@ export const mockModels = [
     "categories": [
       "MECHANICS",
       "Bearings",
-      "rulman"
+      "Bearings"
     ],
     "features": [],
     "rawUrl": "/models/m1785336159674108/model_raw.stp",
@@ -1804,7 +1804,7 @@ export const mockModels = [
     "categories": [
       "MECHANICS",
       "Bearings",
-      "rulman"
+      "Bearings"
     ],
     "features": [],
     "rawUrl": "/models/m1785336159697109/model_raw.stp",
@@ -1821,7 +1821,7 @@ export const mockModels = [
     "categories": [
       "MECHANICS",
       "Bearings",
-      "rulman"
+      "Bearings"
     ],
     "features": [],
     "rawUrl": "/models/m1785336159719110/model_raw.stp",
@@ -1838,7 +1838,7 @@ export const mockModels = [
     "categories": [
       "MECHANICS",
       "Bearings",
-      "rulman"
+      "Bearings"
     ],
     "features": [],
     "rawUrl": "/models/m1785336159743111/model_raw.stp",
